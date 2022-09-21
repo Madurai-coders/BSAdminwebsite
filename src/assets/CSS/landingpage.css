@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+.landingpage {
+  overflow-x: hidden;
+}
+
+.enturflogo {
+  font-family: "Kodchasan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34.2612px;
+  line-height: 123.68%;
+}
+.sublogo {
+  color: #5fd068;
+}
+.enturf_logintxt {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: underline;
+}
+.enturf_registertxt {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-decoration: underline;
+}
+.enturf_registertxt:hover {
+  color: #5fd068;
+  cursor: pointer;
+}
+.enturf_logintxt:hover {
+  color: #5fd068;
+  cursor: pointer;
+}
+.landingpagetxt {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 81.4256px;
+  line-height: 99px;
+  color: #2b2b35;
+}
+.landingpage_dsrptn {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.6461px;
+  line-height: 149.52%;
+}
+.USERS{
+       margin-top: 2px;
+}
+.turf_title {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+}
+.turf_no {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 80px;
+  color: #5fd068;
+  line-height: 85%;
+}
+.turf_dsrptn {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #2b2b35;
+}
+.turfs{
+       margin-left: -15px;
+}
+@media only screen and (max-width: 1465px) {
+.landingpagetxt{
+       font-size: 70px;
+}
+.landingpage_dsrptn{
+       font-size: 22px;
+}
+}
+@media only screen and (max-width: 1292px) {
+       .landingpagetxt{
+              font-size: 60px;
+              line-height: 80px;
+
+       }
+       .landingpage_dsrptn{
+              font-size: 18px;
+       }
+       .turf_no{
+              font-size: 70px;
+       }
+       }
+
+       @media only screen and (max-width: 1145px) {
+              .landingpagetxt{
+                     font-size: 55px;
+                     line-height: 70px;
+              }
+              .landingpage_dsrptn{
+                     font-size: 16px;
+              }
+              .turf_no{
+                     font-size: 65px;
+              }
+       }
+
+       @media only screen and (max-width: 1060px) {
+              .landingpagetxt{
+                     font-size: 50px;
+                     line-height: 65px;
+              }
+              .landingpage_dsrptn{
+                     font-size: 15px;
+              }
+              .turf_no{
+                     font-size: 60px;
+              }
+              .turf_title{
+                     font-size: 12px;
+              }
+              .turf_dsrptn{
+                     font-size: 12px;
+              }
+       }
+       @media only screen and (max-width: 983px) {
+              .landingpagetxt{
+                     font-size: 45px;
+                     line-height: 60px;
+              }
+              .landingpage_dsrptn{
+                     font-size: 13px;
+              }
+              .turf_no{
+                     font-size: 46px;
+              }
+              .turf_title{
+                     font-size: 11px;
+              }
+              .turf_dsrptn{
+                     font-size: 11px;
+              }
+              .turfs{
+                     margin-left: -12px;
+              }
+       }
+       @media only screen and (max-width: 905px) {
+              .landingpagetxt{
+                     font-size: 40px;
+                     line-height: 55px;
+              }
+              .landingpage_dsrptn{
+                     font-size: 12px;
+              }
+              .turf_no{
+                     font-size: 44px;
+              }
+              .turf_title{
+                     font-size: 10px;
+              }
+              .turf_dsrptn{
+                     font-size: 10px;
+              }
+       }
+       @media only screen and (max-width: 830px) {
+              .landingpagetxt{
+                     font-size: 36px;
+                     line-height: 55px;
+              }
+              .landingpage_dsrptn{
+                     font-size: 11px;
+              }
+              .turf_no{
+                     font-size: 43px;
+              }
+              .turf_title{
+                     font-size: 9px;
+              }
+              .turf_dsrptn{
+                     font-size: 9px;
+              }
+       }
