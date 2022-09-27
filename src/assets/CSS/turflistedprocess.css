@@ -1,0 +1,189 @@
+.process_title {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.075em;
+}
+
+/*Vertical Steps*/
+.list-group.vertical-steps {
+  padding-left: 0px;
+}
+.list-group.vertical-steps .list-group-item {
+  border: none;
+  border-left: 3px solid #ece5dd;
+  box-sizing: border-box;
+  border-radius: 0;
+  counter-increment: step-counter;
+  padding-left: 19px;
+  padding-right: 0px;
+  padding-bottom: 70px;
+  padding-top: 0px;
+}
+.list-group.vertical-steps .list-group-item.active {
+  background-color: transparent;
+  color: inherit;
+}
+.list-group.vertical-steps .list-group-item:last-child {
+  border-left: 3px solid transparent;
+  padding-bottom: 0;
+}
+.list-group.vertical-steps .list-group-item::before {
+  border-radius: 50%;
+  /* background-color:#ece5dd; */
+  border: 1.46364px solid #939393;
+  color: #555;
+  content: counter(step-counter);
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 25px;
+  margin-left: -35px;
+  text-align: center;
+  width: 30px;
+}
+.list-group.vertical-steps .list-group-item span,
+.list-group.vertical-steps .list-group-item a {
+  display: block;
+  overflow: hidden;
+  padding-top: 2px;
+  margin-left: 50px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+}
+/*Active/ Completed States*/
+.list-group.vertical-steps .list-group-item.active::before {
+  background-color: #5fd068;
+  border-color: #5fd068;
+  color: #fff;
+}
+.list-group.vertical-steps .list-group-item.completed {
+  border-left: 3px solid #5fd068;
+  border-color: #5fd068;
+}
+.list-group.vertical-steps .list-group-item.completed::before {
+  background-color: #5fd068;
+  color: #fff;
+  border-color: #5fd068;
+}
+.list-group.vertical-steps .list-group-item.completed:last-child {
+  border-left: 3px solid transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+  .list-group.vertical-steps .list-group-item span,
+  .list-group.vertical-steps .list-group-item a {
+    font-size: 13px;
+  }
+  .process_title {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .list-group.vertical-steps .list-group-item span,
+  .list-group.vertical-steps .list-group-item a {
+    font-size: 12px;
+  }
+  .personal {
+    margin-left: 0 !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .process_title {
+    font-size: 35px;
+    line-height: 59px;
+  }
+  .list-group.vertical-steps .list-group-item span,
+  .list-group.vertical-steps .list-group-item a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .process_title {
+    font-size: 30px;
+    line-height: 55px;
+  }
+  .list-group.vertical-steps .list-group-item span,
+  .list-group.vertical-steps .list-group-item a {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .process_title {
+    font-size: 25px;
+    line-height: 45px;
+    margin-left: 4px;
+  }
+  .list-group.vertical-steps .list-group-item span,
+  .list-group.vertical-steps .list-group-item a {
+    font-size: 13px;
+    margin-left: 15px !important;
+  }
+  .steps_process {
+    margin-left: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .process_title {
+    font-size: 23px;
+    line-height: 43px;
+  }
+  .list-group.vertical-steps .list-group-item span,
+  .list-group.vertical-steps .list-group-item a {
+    font-size: 12px;
+  }
+  .list_process {
+    margin-left: 5px !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .process_title {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .list-group.vertical-steps .list-group-item span,
+  .list-group.vertical-steps .list-group-item a {
+    font-size: 15px;
+    padding-right: 20px;
+  }
+  .list-group.vertical-steps {
+    padding-top: 5px !important;
+  }
+}
+
+@media only screen and (max-width: 371px) {
+  .process_title {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .list-group.vertical-steps .list-group-item span,
+  .list-group.vertical-steps .list-group-item a {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 337px) {
+  .process_title {
+    font-size: 18px;
+    line-height: 35px;
+  }
+}
+@media only screen and (max-width: 307px) {
+  .process_title {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .list-group.vertical-steps .list-group-item span,
+  .list-group.vertical-steps .list-group-item a {
+    font-size: 11px;
+    padding-right: 10px;
+  }
+}
