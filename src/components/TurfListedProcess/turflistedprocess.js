@@ -27,6 +27,7 @@ function TurfListedProcess() {
                 </div>
 
                 <div className="col-6 mt-3 steps_process">
+                  
                   <div className="steps">
                     <ol class="list-group vertical-steps mt-5 pt-5 ms-5">
                       <li class="list-group-item completed mt-5">
@@ -93,6 +94,7 @@ function TurfListedProcess() {
         )}
       </div>
     </>
+
   );
 }
 
