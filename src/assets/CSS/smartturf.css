@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
+
+.smartturf {
+  height: 100vh;
+}
+
+.Sturf_bg {
+  background-image: url("../images/Sturfbg.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.Sturf_title {
+  font-family: "Lexend Deca";
+  font-size: Medium;
+  font-size: 43px;
+  line-height: 170%;
+  color: white;
+}
+.Sturf_dscrptn {
+  font-family: "Lexend Deca";
+  font-weight: 200;
+  font-size: 23px;
+  line-height: 170%;
+  color: white;
+  letter-spacing: 6%;
+}
+.cards {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.card {
+  width: 100%;
+  height: 370px;
+  border-radius: 16px;
+  box-shadow: 2px 7px 7px 2px rgba(91, 91, 91, 0.05);
+  border: none !important;
+}
+.card_img {
+  width: 60%;
+  height: 40%;
+}
+.card-description {
+  font-size: 20px;
+  font-family: "Lexend Deca";
+  font-style: Light;
+  line-height: 25px;
+  padding: 0 55px;
+}
+@media only screen and (max-width: 1331px) {
+  .card-description {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 1251px) {
+  .card-description {
+    padding: 0 35px;
+  }
+}
+@media only screen and (max-width: 1251px) {
+  .card-description {
+    font-size: 16px;
+    padding: 0 38px;
+  }
+}
+@media only screen and (max-width: 1147px) {
+  .card-description {
+    font-size: 15px;
+    padding: 0 37px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 1095px) {
+  .card-description {
+    font-size: 14px;
+    padding: 0 37px;
+    line-height: 20px;
+  }
+  .card {
+    height: 330px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .card-description {
+    font-size: 14px;
+    padding: 0 30px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 994px) {
+  .card-description {
+    font-size: 13px;
+    padding: 0 29px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .card-description {
+    font-size: 18px;
+    padding: 10px 30px;
+    line-height: 21px;
+  }
+  .Sturf_title {
+    margin-top: 50px;
+  }
+  .smartturf {
+    height: 150vh;
+  }
+  .Sturf_cards {
+    background-color: rgb(95, 208, 104);
+  }
+}
+@media only screen and (max-width: 877px) {
+  .card-description {
+    font-size: 16px;
+    padding: 10px 28px;
+    line-height: 21px;
+  }
+}
+
+@media only screen and (max-width: 797px) {
+  .card-description {
+    font-size: 16px;
+    padding: 10px 22px;
+    line-height: 21px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-description {
+    font-size: 25px;
+    padding: 10px 22px;
+    line-height: 35px;
+    margin-top: 50px !important;
+  }
+  .card_img {
+    margin-left: 110px !important;
+  }
+  .card {
+    padding-bottom: 80px;
+  }
+
+  .smartturf {
+    height: 250vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card-description {
+    font-size: 22px;
+  }
+  .card_img {
+    margin-left: 80px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .card-description {
+    font-size: 20px;
+  }
+  .card_img {
+    margin-left: 70px !important;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .card {
+    padding-bottom: 120px;
+  }
+  .card-description {
+    line-height: 28px;
+  }
+  .card_img {
+    margin-left: 60px !important;
+  }
+}
+@media only screen and (max-width: 402px) {
+  .card-description {
+    line-height: 28px;
+    font-size: 18px;
+  }
+  .card_img {
+    margin-left: 55px !important;
+  }
+  .Sturf_dscrptn {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 372px) {
+  .card-description {
+    line-height: 25px;
+    font-size: 16px;
+  }
+  .card_img {
+    margin-left: 50px !important;
+  }
+  .Sturf_dscrptn {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 343px) {
+  .card-description {
+    line-height: 23px;
+    font-size: 14px;
+  }
+  .card_img {
+    margin-left: 45px !important;
+  }
+  .Sturf_dscrptn {
+    font-size: 18px;
+  }
+  .Sturf_title {
+    font-size: 39px;
+  }
+}
+@media only screen and (max-width: 314px) {
+  .card-description {
+    line-height: 20px;
+    font-size: 12px;
+  }
+  .card_img {
+    margin-left: 40px !important;
+  }
+  .Sturf_dscrptn {
+    font-size: 17px;
+  }
+
+  .card {
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 285px) {
+  .card-description {
+    line-height: 17px;
+    font-size: 10px;
+  }
+
+  .Sturf_dscrptn {
+    font-size: 16px;
+  }
+
+  .card {
+    padding-bottom: 60px;
+  }
+}
