@@ -4,7 +4,7 @@ import LandingPage from "./components/LandingPage/landingpage";
 import TurfListedProcess from "./components/TurfListedProcess/turflistedprocess";
 import AboutEnturf from "./components/AboutEnturf/about";
 import SmartTurf from './components/SmartTurf/smartturf';
-import Advantage from './components/Advantage/advantage';
+import Contact from './components/ContactForm/contact';
 function App() {
   return (
     <>
@@ -12,7 +12,7 @@ function App() {
       <TurfListedProcess></TurfListedProcess>
       <AboutEnturf></AboutEnturf>
       <SmartTurf></SmartTurf>
-      <Advantage></Advantage>
+      <Contact></Contact>
     </>
   );
 }

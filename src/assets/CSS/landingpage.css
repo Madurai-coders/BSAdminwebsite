@@ -90,7 +90,7 @@
   .landingpage_dsrptn {
     font-size: 26px;
   }
-  .turf_no{
+  .turf_no {
     font-size: 60px;
   }
 }
@@ -220,7 +220,7 @@
   .turf_no {
     font-size: 36px;
   }
-  .turfs{
+  .turfs {
     margin-left: -10px;
   }
 }
@@ -239,7 +239,6 @@
   .turf_no {
     font-size: 33px;
   }
- 
 }
 @media only screen and (max-width: 767px) {
   .landingpagetxt {
@@ -310,7 +309,7 @@
     position: relative;
     bottom: 1px;
   }
-  .landingpage_dsrptn{
+  .landingpage_dsrptn {
     position: relative;
     right: 15px;
   }
@@ -366,7 +365,6 @@
     position: relative;
     right: 15px;
   }
- 
 }
 
 @media only screen and (max-width: 398px) {

@@ -76,6 +76,11 @@
 .list-group.vertical-steps .list-group-item.completed:last-child {
   border-left: 3px solid transparent;
 }
+ .Enturfadminwebsite_loader {
+  height: 100vh;
+  /* width: 65vw; */
+  overflow-y: hidden;
+} 
 
 @media only screen and (max-width: 1200px) {
   .list-group.vertical-steps .list-group-item span,

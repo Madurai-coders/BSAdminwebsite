@@ -3,10 +3,10 @@ import AboutEnturf from '../../assets/images/About.svg';
 function About() {
   return (
     <>
-      <div className="container mt-5 pt-5 about">
-        <div className="aboutenturf mt-5">
-          <div className="row mt-5">
-            <div className="col-lg-6 col-md-6 col-sm-12 mt-5">
+      <div className="container about">
+        <div className="aboutenturf">
+          <div className="row">
+            <div className="col-lg-6 col-md-6 col-sm-12 ">
               <div className="about_tit mt-5 pt-5">
                 <h1 className="about_title">ABOUT ENTURF</h1>
               </div>
