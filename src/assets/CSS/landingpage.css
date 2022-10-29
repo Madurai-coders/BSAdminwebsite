@@ -4,6 +4,9 @@
 .landingpage {
   overflow-x: hidden;
 }
+.landingpage_img{
+  margin-top: -100px;
+}
 
 .enturflogo {
   font-family: "Kodchasan";

@@ -5,6 +5,7 @@ import TurfListedProcess from "./components/TurfListedProcess/turflistedprocess"
 import AboutEnturf from "./components/AboutEnturf/about";
 import SmartTurf from './components/SmartTurf/smartturf';
 import Contact from './components/ContactForm/contact';
+import Advantage from './components/Advantageofenturf/advantage';
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <TurfListedProcess></TurfListedProcess>
       <AboutEnturf></AboutEnturf>
       <SmartTurf></SmartTurf>
+      <Advantage></Advantage>
       <Contact></Contact>
     </>
   );

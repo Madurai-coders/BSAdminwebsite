@@ -1,0 +1,228 @@
+.advantageofenturf {
+  margin-bottom: 240px !important;
+}
+
+.advantage_title {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 169.68%;
+}
+.advantages {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 200%;
+}
+
+.increase {
+  width: 82%;
+  height: 65px;
+  text-align: center !important;
+  position: relative;
+  /* border: 2px solid rgb(190, 189, 189) ; */
+  box-sizing: border-box;
+  border-left-color: transparent;
+  box-shadow: 0px -2.97838px 7.11254px rgba(0, 0, 0, 0.1),
+    1.77814px 2.97864px 7.11254px rgba(0, 0, 0, 0.13);
+}
+.increase:after {
+  content: "";
+  position: absolute;
+  width: 45.5px;
+  height: 45.7px;
+  top: 10px;
+  right: -23px;
+  transform: rotate(315deg);
+  border: 2px;
+  background: white;
+  box-sizing: border-box;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  transition: 0.5s;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.increase:before {
+  content: "";
+  position: absolute;
+  width: 45.5px;
+  height: 45.7px;
+  top: 10px;
+  left: -23px;
+  background: white;
+  transform: rotate(135deg);
+  border: 2px;
+  box-sizing: border-box;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  transition: 0.5s;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.points {
+  color: rgba(102, 221, 112, 0.81);
+  border-radius: 50%;
+  background-color: #edffee;
+  position: absolute; /* Sit on top of the page content */
+  width: 40px; /* Full width (cover the whole page) */
+  height: 40px; /* Full height (cover the whole page) */
+  top: 7px;
+  left: -40px;
+  right: 0px;
+  bottom: 0;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+.num {
+  font-family: "Lexend Deca";
+  letter-spacing: 0.06em;
+  font-size: 23px;
+  font-weight: 500;
+  margin-left: -7px;
+}
+.advantage {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 123.68%;
+  letter-spacing: 0.06em;
+  font-size: 16px;
+}
+.ds {
+  position: relative;
+  bottom: 250px;
+}
+.ad {
+  height: 80vh;
+}
+
+@media only screen and (max-width: 1540px) {
+  .advantage {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .advantage {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .advantage {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 1310px) {
+  .advantage {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+@media only screen and (max-width: 1220px) {
+  .advantage {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .advantage {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .advantage {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .increase {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .advantage {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .advantage {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .advantage {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 830px) {
+  .advantage {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 792px) {
+  .advantage {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .advantage {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .ad {
+       height: 110vh;
+     }
+}
+@media only screen and (max-width: 667px) {
+  .advantage {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .advantage {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .advantage_title {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .advantage {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .advantage {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .advantage_title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 389px) {
+  .advantage {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .advantage {
+    font-size: 11px;
+  }
+  .advantage_title {
+    font-size: 20px;
+  }
+  .increase {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 337px) {
+  .advantage {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .advantage {
+    font-size: 9px;
+  }
+}

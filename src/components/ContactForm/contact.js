@@ -3,8 +3,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import LanguageIcon from "@mui/icons-material/Language";
 import TextField from "@mui/material/TextField";
-import React, { useState } from "react";
-
+import React, { useState,useEffect } from "react";
+import AOS from "aos";
 function Contact() {
 
   const [contactform,setcontactform]= useState({
@@ -15,11 +15,15 @@ function Contact() {
     City:""
   })
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
-      <div className="contactform mt-5">
+      <div className="contactform">
         <div className="row justify-content-end">
-          <div className=" calls col-lg-3 col-md-3 col-sm-4 col-8 d-flex flex-column mt-5">
+          <div className="calls col-lg-3 col-md-3 col-sm-4 col-8 d-flex flex-column">
             <div className="callus  mt-5 pt-3">
               <PhoneIcon
                 className="phone"
@@ -47,7 +51,7 @@ function Contact() {
           </div>
 
           <div className="col-lg-7 col-md-7 col-sm-7 col-12">
-            <div className="form me-5">
+            <div className="form me-5" data-aos="zoom-in">
               <div className="contact_tit ms-5">
                 <h2 className="contact_title pt-4">Contact Now</h2>
               </div>

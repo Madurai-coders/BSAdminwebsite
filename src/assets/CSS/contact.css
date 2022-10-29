@@ -14,7 +14,7 @@
   color: #4f4f4f;
 }
 .no {
-  color: #4f4f4f;
+  color: #4f4f4f!important;
   font-family: "Lexend Deca", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -96,7 +96,6 @@
   }
 
   .callus {
-    margin-top: 0px !important;
     padding-top: 0px !important;
   }
 
