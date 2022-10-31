@@ -16,6 +16,10 @@
   font-size: 34.2612px;
   line-height: 123.68%;
 }
+.landingpagetxt{
+  position: absolute;
+  width: 35%;
+}
 .sublogo {
   color: #5fd068;
 }
@@ -58,6 +62,7 @@
   font-weight: 400;
   font-size: 26px;
   line-height: 149.52%;
+  margin-top: 190px;
 }
 .USERS {
   margin-top: 2px;
@@ -295,6 +300,7 @@
     font-size: 75px;
     line-height: 88px;
     margin-left: -40px !important;
+    width: 100%;
   }
   .turf_intro {
     text-align: center;
@@ -348,6 +354,7 @@
   .landingpage_dsrptn {
     font-size: 22px;
     padding-right: 70px;
+    margin-top:140px ;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -425,6 +432,8 @@
   .landingpage_dsrptn {
     font-size: 16px;
     padding-right: 70px;
+    margin-top:120px ;
+
   }
   .turf_title {
     font-size: 10px;
@@ -444,6 +453,8 @@
   .landingpage_dsrptn {
     font-size: 14px;
     padding-right: 80px;
+    margin-top:100px ;
+
   }
   .turf_no {
     font-size: 32px;

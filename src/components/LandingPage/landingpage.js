@@ -43,9 +43,9 @@ function Landingpage() {
                 />
                 
                 <BlinkCursor active blinkSpeed={500} />
-              </h1>
-              <div className="landingpage_dsrptn mt-5">
-                <p className="dsrptn_txt">
+              </h1><br></br>
+              <div className="landingpage_dsrptn">
+                <p className="dsrptn_txt mt-5 pt-5">
                   Connect with millions of sportsters by listing your turf on
                   the Enturf App
                 </p>
