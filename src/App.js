@@ -6,6 +6,8 @@ import AboutEnturf from "./components/AboutEnturf/about";
 import SmartTurf from './components/SmartTurf/smartturf';
 import Contact from './components/ContactForm/contact';
 import Advantage from './components/Advantageofenturf/advantage';
+import React, { Component }  from 'react';
+
 function App() {
   return (
     <>

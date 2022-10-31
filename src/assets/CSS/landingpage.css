@@ -3,6 +3,7 @@
 
 .landingpage {
   overflow-x: hidden;
+  box-shadow: 0px 4px 23px rgba(138, 138, 138, 0.07);
 }
 .landingpage_img{
   margin-top: -100px;
@@ -85,6 +86,52 @@
 .turfs {
   margin-left: -15px;
 }
+
+/* dynamic texts */
+.dynamic_txts{
+  height: 300px;
+  line-height: 100px;
+  overflow: hidden;
+  position: relative;
+  top:30px;
+}
+.dynamic_txts li{
+  font-size: 65px;
+  position: relative;
+  top: 0;
+  right: 10px;
+ line-height: 100px;
+ animation: slide 10s steps(10)
+ infinite
+ ;
+}
+@keyframes slide{
+  100%{
+         left: -600px;
+  }
+}
+.dynamic_txts li::after{
+  content: "";
+  position: absolute;
+  top: 120px;
+  right: -600px;
+  left: 0px;
+  height: 70px;
+  width: 100%;
+  border-left: 2px solid rgb(188, 12, 12);
+  animation: typing 6s steps(6)
+  infinite;
+}
+@keyframes typing{
+  40%,
+  60%{
+         right:calc(100% + 1px);
+  }
+  100%{
+         right:0
+  }
+}
+
 @media only screen and (max-width: 1514px) {
   .landingpagetxt {
     font-size: 64px;

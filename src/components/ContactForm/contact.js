@@ -24,38 +24,38 @@ function Contact() {
       <div className="contactform">
         <div className="row justify-content-end">
           <div className="calls col-lg-3 col-md-3 col-sm-4 col-8 d-flex flex-column">
-            <div className="callus  mt-5 pt-3">
+            <div className="callus">
               <PhoneIcon
                 className="phone"
                 sx={{ fontSize: 27, marginBottom: 1 }}
               ></PhoneIcon>
-              <span className="call ms-1">Call us</span>
+              <span className="call ms-2">Call us</span>
               <h6 className="no">(480) 555-0103</h6>
             </div>
-            <div className="location  mt-5">
+            <div className="location  mt-5 pt-5">
               <FmdGoodIcon
                 className="phone"
                 sx={{ fontSize: 27, marginBottom: 1 }}
               ></FmdGoodIcon>
-              <span className="call ms-1">Location</span>
+              <span className="call ms-2">Location</span>
               <h6 className="place">Madurai,Tamilnadu</h6>
             </div>
-            <div className="mail  mt-5">
+            <div className="mail  mt-5 pt-5">
               <LanguageIcon
                 className="phone"
                 sx={{ fontSize: 27, marginBottom: 1 }}
               ></LanguageIcon>
-              <span className="call ms-1">Mail us</span>
+              <span className="call ms-2">Mail us</span>
               <h6 className="email">enturf@example.com</h6>
             </div>
           </div>
 
-          <div className="col-lg-7 col-md-7 col-sm-7 col-12">
-            <div className="form me-5" data-aos="zoom-in">
+          <div className="col-lg-7 col-md-7 col-sm-7 col-12 ">
+            <div className=" form me-5" data-aos="zoom-in">
               <div className="contact_tit ms-5">
-                <h2 className="contact_title pt-4">Contact Now</h2>
+                <h2 className="contact_title ms-4">Contact Now</h2>
               </div>
-              <div className="contact_list ms-5 me-5 mt-3">
+              <div className="contact_list ms-5 me-5 ps-4">
                 <TextField
                 value={contactform.Name}
                 onChange={(e) =>
@@ -76,6 +76,8 @@ function Contact() {
                   id="standard-basic"
                   label="Email"
                   variant="standard"
+                  className="mt-4"
+
                 />
                 <TextField
                   value={contactform.Phone}
@@ -87,6 +89,8 @@ function Contact() {
                   id="standard-basic"
                   label="Phone"
                   variant="standard"
+                  className="mt-4"
+
                 />
                 <TextField
                   value={contactform.SportsAvenue}
@@ -98,20 +102,23 @@ function Contact() {
                   id="standard-basic"
                   label="Sports Avenue"
                   variant="standard"
+                  className="mt-4"
+
                 />
                 <TextField
                   value={contactform.City}
                   onChange={(e) =>
                     setcontactform({ ...contactform, City: e.target.value })
                   }
-                  sx={{ marginTop: 3 }}
                   fullWidth
                   id="standard-basic"
                   label="City"
                   variant="standard"
+                  className="mt-3"
+
                 />
                 <div className="row justify-content-center">
-                  <div className="col-11 text-center">
+                  <div className="col-12 text-center">
                     <button
                       type="button"
                       className="contact_submit btn btn-success mt-5"

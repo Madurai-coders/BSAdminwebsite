@@ -97,8 +97,8 @@ function TurfListedProcess() {
                   </div>
                 </div>
 
-                <div className="col-6 mt-3 steps_process d-flex flex-row mt-5">
-                  <div className="d-flex flex-column mt-4 pt-5 ms-5">
+                <div className="col-6 mt-3 steps_process d-flex flex-row mt-5 pt-5">
+                  <div className="d-flex flex-column mt-5 pt-5 ms-5">
                     <div className="circle" onClick={Step_1}>
                       <span className="no1">1</span>
                     </div>
@@ -126,9 +126,9 @@ function TurfListedProcess() {
                   </div>
 
                   <div className="steps mt-5 pt-5 ms-5">
-                    <h6 className=" slidetxt mt-4">Fill form with details</h6>
+                    <h6 className=" slidetxt mt-5 pt-1">Fill form with details</h6>
                     <br></br>
-                    <h6 className="slidetxt_2 mt-5">
+                    <h6 className="slidetxt_2 mt-4 pt-3">
                       Registration link along with details of personal
                       <br></br> guide will be sent via email
                     </h6>
