@@ -114,7 +114,7 @@ function Contact() {
                   id="standard-basic"
                   label="City"
                   variant="standard"
-                  className="mt-3"
+                  className="mt-3 pt-1"
 
                 />
                 <div className="row justify-content-center">
