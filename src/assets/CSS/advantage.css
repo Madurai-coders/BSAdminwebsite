@@ -25,8 +25,8 @@
   /* border: 2px solid rgb(190, 189, 189) ; */
   box-sizing: border-box;
   border-left-color: transparent;
-  box-shadow: 0px -2.97838px 7.11254px rgba(0, 0, 0, 0.1),
-    1.77814px 2.97864px 7.11254px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px -2.97838px 5.11254px rgba(0, 0, 0, 0.1),
+    1.77814px 2.97864px 5.11254px rgba(0, 0, 0, 0.13);
 }
 .increase:after {
   content: "";
@@ -90,7 +90,7 @@
 }
 
 .ad {
-  height: 80vh;
+  height: 40vh;
 }
 
 @media only screen and (max-width: 1540px) {

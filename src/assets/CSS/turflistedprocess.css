@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap');
 .process_title {
   font-family: "Lexend Deca";
   font-style: normal;
@@ -7,8 +7,9 @@
   font-size: 32px;
   letter-spacing: 0.075em;
 }
+
 .lists{
-  height: 60vh;
+  height: 45vh;
 }
 .ellipse{
   width: 100vw;
@@ -35,7 +36,7 @@
   position: relative;
   bottom: 200px;
 }
-.steps_process{
+ .steps_process{
   position: relative;
   bottom: 200px;
 }
@@ -125,14 +126,14 @@
 .slidetxt {
   font-family: "Lexend Deca";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.06em;
 }
 .slidetxt_2 {
   font-family: "Lexend Deca";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.06em;
 }
@@ -205,8 +206,13 @@
   }
   .slidetxt_2{
     font-size: 15px;
-    margin-top: 45px!important;
+    margin-top: 36px!important;
+    padding-right: 60px;
+    line-height: 20px;
  
+  }
+  .turflistprocess{
+    height: 110vh;
   }
 }
 @media only screen and (max-width: 657px) {
@@ -239,61 +245,83 @@
 @media only screen and (max-width: 582px) {
  
   .slidetxt{
+    font-size: 13px;
+
+  }
+  .slidetxt_2{
+    font-size: 13px;
+    margin-top: 41px!important;
+    padding-right: 45px;
+
+  }
+  .steps_process{
+    margin-top: 0px!important;
+    padding-top: 0px!important;
+  }
+  .turflistprocess{
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 501px) {
+ 
+  .slidetxt{
     font-size: 12px;
 
   }
   .slidetxt_2{
     font-size: 12px;
+    margin-top: 44px!important;
+
  
   }
 }
-@media only screen and (max-width: 482px) {
+@media only screen and (max-width: 473px) {
  
   .slidetxt{
-    font-size: 11px;
-
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 500;
+    
   }
   .slidetxt_2{
-    font-size: 11px;
- 
-  }
-}
-@media only screen and (max-width: 449px) {
- 
-  .slidetxt{
-    font-size: 10px;
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 500;
+    padding-right: 30px;
+    margin-top: 40px!important;
 
-  }
-  .slidetxt_2{
-    font-size: 10px;
- 
   }
   .st{
     padding: 0px 0px !important;
   }
 }
-@media only screen and (max-width: 386px) {
+@media only screen and (max-width: 430px) {
  
   .slidetxt{
-    font-size: 8px;
-    margin-top: 30px!important;
+    font-size: 11px;
+    margin-top:26!important;
 
   }
   .slidetxt_2{
-    font-size: 8px;
-    margin-top: 55px!important;
-
- 
+    font-size: 11px;
+    line-height: 17px;
+    margin-top: 50px!important;
+  }
+  .step_process{
+    margin: 0px!important;
+  }
+  .turflistprocess{
+    height: 80vh;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 403px) {
  
   .slidetxt{
-    font-size: 7px;
+    font-size: 10px;
 
   }
   .slidetxt_2{
-    font-size: 7px;
+    font-size: 10px;
   }
 }
 
@@ -326,21 +354,70 @@
   }
 }
 
-@media only screen and (max-width: 371px) {
+@media only screen and (max-width: 375px) {
   .process_title {
     font-size: 20px;
     line-height: 35px;
   }
+  .slidetxt{
+    font-size: 9px;
+  }
+  .slidetxt_2{
+    font-size: 9px;
+    margin-top: 55px!important;
+
+  }
 }
-@media only screen and (max-width: 337px) {
+@media only screen and (max-width: 347px) {
   .process_title {
     font-size: 18px;
     line-height: 35px;
   }
+  .slidetxt{
+    font-size: 9px;
+  }
+  .slidetxt_2{
+    font-size: 9px;
+    margin-top: 50px!important;
+    padding-right: 0px!important;
+
+  }
+  .turflistprocess{
+    height: 70vh;
+  }
+  .prog{
+    position: relative;
+    bottom: 4px;
+  }
 }
+
 @media only screen and (max-width: 307px) {
   .process_title {
     font-size: 16px;
     line-height: 30px;
+  }
+  .slidetxt{
+    font-size: 8px;
+  }
+  .slidetxt_2{
+    font-size: 8px;
+  
+
+  }
+  .turflistprocess{
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 280px) {
+
+  .slidetxt{
+    font-size: 7px;
+  }
+  .slidetxt_2{
+    font-size: 7px;
+
+  }
+  .turflistprocess{
+    height: 55vh;
   }
 }

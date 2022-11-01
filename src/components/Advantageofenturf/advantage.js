@@ -13,15 +13,15 @@ function Advantage() {
 
   return (
     <>
-      <div className="advantageofenturf mt-5 ad">
-        <div className="row mt-5">
-          <div className="col-12 text-center mt-5">
-            <h1 className="advantage_title mt-5 pt-5">ADVANTAGE OF ENTURF</h1>
+      <div className="advantageofenturf ad">
+        <div className="row">
+          <div className="col-12 text-center">
+            <h1 className="advantage_title">ADVANTAGE OF ENTURF</h1>
           </div>
         </div>
         {bigscreen && (
           <>
-            <div className="row justify-content-center mt-5">
+            <div className="row justify-content-center">
               <div
                 className="col-lg-3 
                mt-5 d-flex flex-row"

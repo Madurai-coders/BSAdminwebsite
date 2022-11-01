@@ -126,11 +126,11 @@
 
 @media only screen and (max-width: 461px) {
   .about_title {
-    font-size: 36px;
+    font-size: 37px;
   }
 
   .about_dsrptn {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
   }
 }
@@ -163,7 +163,7 @@
   }
 
   .about_dsrptn {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 22px;
   }
   .Enturfadminwebsite_loader {
@@ -177,7 +177,7 @@
   }
 
   .about_dsrptn {
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
   }
 }
@@ -189,26 +189,38 @@
     padding: 0 15px;
   }
   .about_dsrptn {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 20px;
   }
 }
 
-@media only screen and (max-width: 311px) {
+@media only screen and (max-width: 330px) {
   .about_title {
     font-size: 27px;
   }
   .about_dsrptn {
-    font-size: 11px;
+    font-size: 14px;
     line-height: 19px;
   }
 }
-@media only screen and (max-width: 291px) {
-  .about_title {
-    font-size: 25px;
-  }
+@media only screen and (max-width: 310px) {
+ 
   .about_dsrptn {
-    font-size: 10px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 290px) {
+ 
+  .about_dsrptn {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media only screen and (max-width: 269px) {
+ 
+  .about_dsrptn {
+    font-size: 11px;
     line-height: 18px;
   }
 }

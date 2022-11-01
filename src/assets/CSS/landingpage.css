@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 
-.landingpage {
+  .landingpage {
+    height: 110vh;
   overflow-x: hidden;
+  overflow-y: hidden;
   box-shadow: 0px 4px 23px rgba(138, 138, 138, 0.07);
 }
 .landingpage_img{
@@ -18,7 +20,7 @@
 }
 .landingpagetxt{
   position: absolute;
-  width: 35%;
+  width: 40%;
 }
 .sublogo {
   color: #5fd068;
@@ -62,7 +64,7 @@
   font-weight: 400;
   font-size: 26px;
   line-height: 149.52%;
-  margin-top: 190px;
+  margin-top: 240px;
 }
 .USERS {
   margin-top: 2px;
@@ -173,6 +175,10 @@
   .turf_no {
     font-size: 56px;
   }
+  
+.landingpage {
+  height: 100vh;
+}
 }
 
 @media only screen and (max-width: 1293px) {
@@ -182,9 +188,14 @@
   }
   .landingpage_dsrptn {
     font-size: 22px;
+    margin-top: 220px;
+
   }
   .turf_no {
     font-size: 50px;
+  }
+  .landingpage {
+    height: 94vh;
   }
 }
 @media only screen and (max-width: 1201px) {
@@ -195,9 +206,18 @@
   .landingpage_dsrptn {
     font-size: 21px;
     padding-right: 10px;
+    margin-top: 210px;
+
   }
   .turf_no {
     font-size: 46px;
+  }
+  .landingpage_img{
+    position: relative;
+    bottom: 70px;
+  }
+  .landingpage {
+    height: 90vh;
   }
 }
 @media only screen and (max-width: 1147px) {
@@ -208,6 +228,8 @@
   .landingpage_dsrptn {
     font-size: 21px;
     padding-right: 60px;
+    margin-top: 190px;
+
   }
   .turf_no {
     font-size: 40px;
@@ -221,6 +243,9 @@
   .turfs {
     margin-left: -12px;
   }
+  .landingpage {
+    height: 84vh;
+  }
 }
 @media only screen and (max-width: 1036px) {
   .landingpagetxt {
@@ -229,9 +254,14 @@
   }
   .landingpage_dsrptn {
     font-size: 19px;
+    margin-top: 170px;
+
   }
   .turf_no {
     font-size: 39px;
+  }
+  .landingpage {
+    height: 80vh;
   }
 }
 
@@ -242,6 +272,8 @@
   }
   .landingpage_dsrptn {
     font-size: 17px;
+    margin-top: 150px;
+
   }
   .turf_no {
     font-size: 36px;
@@ -251,6 +283,10 @@
   }
   .turf_dsrptn {
     font-size: 9px;
+  }
+  .landingpage_img{
+    position: relative;
+    bottom: 80px;
   }
 }
 @media only screen and (max-width: 925px) {
@@ -278,6 +314,9 @@
   .turfs {
     margin-left: -10px;
   }
+  .landingpage {
+    height: 76vh;
+  }
 }
 
 @media only screen and (max-width: 810px) {
@@ -293,6 +332,9 @@
   }
   .turf_no {
     font-size: 33px;
+  }
+  .landingpage {
+    height: 72vh;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -316,6 +358,8 @@
   .landingpage_dsrptn {
     font-size: 27px;
     padding-right: 100px;
+    margin-top: 250px;
+
     margin-left: 30px !important;
   }
   .turf_title {
@@ -332,8 +376,11 @@
     margin-left: -10px;
   }
   .landingpage_img {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 0 !important;
+  }
+  .landingpage {
+    height: 210vh;
   }
 }
 @media only screen and (max-width: 677px) {
@@ -344,6 +391,14 @@
   .landingpage_dsrptn {
     font-size: 24px;
     padding-right: 70px;
+    margin-top: 240px;
+
+  }
+  .landingpage_img{
+  margin-top: 90px;
+  }
+  .landingpage {
+    height: 197vh;
   }
 }
 @media only screen and (max-width: 592px) {
@@ -354,8 +409,16 @@
   .landingpage_dsrptn {
     font-size: 22px;
     padding-right: 70px;
-    margin-top:140px ;
+    margin-top: 230px;
+
   }
+  .landingpage_img{
+    margin-top: 85px;
+    }
+    .landingpage {
+      height: 191vh;
+    }
+ 
 }
 @media only screen and (max-width: 576px) {
   .enturf_logintxt {
@@ -369,7 +432,16 @@
   .landingpage_dsrptn {
     position: relative;
     right: 15px;
+
+    margin-top: 220px;
+
   }
+  .landingpage_img{
+    margin-top: 80px;
+    }
+    .landingpage {
+      height: 186vh;
+    }
 }
 @media only screen and (max-width: 551px) {
   .landingpagetxt {
@@ -377,24 +449,28 @@
     line-height: 70px;
   }
   .landingpage_dsrptn {
-    font-size: 19px;
-    padding-right: 70px;
+    font-size: 23px;
+    padding-right: 40px;
   }
   .turf_title {
-    font-size: 13px;
+    font-size: 14px;
   }
   .turf_no {
-    font-size: 41px;
+    font-size: 49px;
   }
   .turf_dsrptn {
-    font-size: 15px;
+    font-size: 16px;
   }
   .enturf_logintxt {
-    font-size: 13px;
+    font-size: 14px;
   }
   .enturf_registertxt {
-    font-size: 13px;
+    font-size: 14px;
   }
+  .landingpage_img{
+    margin-top: 50px;
+    }
+   
 }
 @media only screen and (max-width: 503px) {
   .landingpagetxt {
@@ -408,7 +484,13 @@
   .enturflogo {
     margin-left: 0 !important;
     padding-left: 15px !important;
-  }
+  } 
+  .landingpage_img{
+    margin-top: 40px;
+    }
+    .landingpage {
+      height: 178vh;
+    }
 }
 
 @media only screen and (max-width: 472px) {
@@ -417,11 +499,19 @@
     line-height: 60px;
   }
   .landingpage_dsrptn {
-    font-size: 19px;
+    font-size: 21px;
     padding-right: 70px;
     position: relative;
     right: 15px;
+    margin-top: 160px;
   }
+  .landingpage_img{
+    margin-top: 30px;
+    }
+    .landingpage {
+      height: 170vh;
+    }
+ 
 }
 
 @media only screen and (max-width: 398px) {
@@ -430,31 +520,47 @@
     line-height: 55px;
   }
   .landingpage_dsrptn {
-    font-size: 16px;
+    font-size: 17px;
     padding-right: 70px;
-    margin-top:120px ;
+    margin-top:145px ;
 
   }
   .turf_title {
-    font-size: 10px;
+    font-size: 12px;
   }
   .turf_no {
-    font-size: 38px;
+    font-size: 45px;
   }
   .turf_dsrptn {
-    font-size: 13px;
+    font-size: 14px;
+  }
+  .turfs{
+    margin-top: 15px!important;
+  }
+  .USERS{
+    margin-left: 5px!important;
   }
 }
+@media only screen and (max-width: 410px) {
+  .landingpage_img{
+    margin-top: 120px!important;
+    }
+    .landingpage {
+      height: 160vh;
+    }
+}
+
 @media only screen and (max-width: 357px) {
   .landingpagetxt {
     font-size: 37px;
     line-height: 55px;
   }
   .landingpage_dsrptn {
-    font-size: 14px;
-    padding-right: 80px;
-    margin-top:100px ;
-
+    font-size: 20px;
+    padding-right: 10px;
+    margin-top:125px ;
+position: relative;
+right: 31px;
   }
   .turf_no {
     font-size: 32px;
@@ -468,6 +574,12 @@
   .enturflogo {
     font-size: 18px;
   }
+  .landingpage_img{
+    margin-top: 120px!important;
+    }
+    .landingpage {
+      height: 137vh;
+    }
 }
 @media only screen and (max-width: 343px) {
   .landingpagetxt {
@@ -475,13 +587,13 @@
     line-height: 50px;
   }
   .landingpage_dsrptn {
-    font-size: 16px;
+    font-size: 19px;
     padding-right: 10px;
     position: relative;
     right: 35px;
   }
   .turf_no {
-    font-size: 25px;
+    font-size: 31px;
   }
   .turfs {
     margin-left: -5px;
@@ -489,6 +601,12 @@
   .TURFS {
     margin-left: -15px !important;
   }
+  .landingpage_img{
+    margin-top: 110px!important;
+    }
+    .landingpage {
+      height: 135vh;
+    }
 }
 
 @media only screen and (max-width: 312px) {
@@ -497,28 +615,37 @@
     line-height: 48px;
   }
   .landingpage_dsrptn {
-    font-size: 15px;
+    font-size: 18px;
     padding-right: 10px;
     position: relative;
     right: 35px;
   }
   .turf_no {
-    font-size: 23px;
+    font-size: 30px;
   }
   .turf_title {
-    font-size: 8px;
+    font-size: 10px;
   }
   .turf_dsrptn {
-    font-size: 9px;
+    font-size: 10px;
   }
+  .landingpage_img{
+    margin-top: 90px!important;
+    }
+    .landingpage {
+      height: 128vh;
+    }
 }
-@media only screen and (max-width: 285px) {
+@media only screen and (max-width: 300px) {
   .landingpagetxt {
     font-size: 30px;
     line-height: 45px;
   }
   .landingpage_dsrptn {
-    font-size: 13px;
+    font-size: 15px;
     padding-right: 10px;
+  }
+  .landingpage {
+    height: 125vh;
   }
 }

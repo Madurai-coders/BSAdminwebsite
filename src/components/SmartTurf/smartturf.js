@@ -18,7 +18,7 @@ function SmartTurf() {
     
     <>
 
-      <div className="smartturf mt-5 pt-5">
+      <div className="smartturf">
         <div className="Sturf_bg text-center">
           <div className="Sturf_tit mt-5 pt-5">
             <h3 className="Sturf_title">SMART TURF</h3>

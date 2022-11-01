@@ -32,10 +32,10 @@ function Landingpage() {
         <div className="row mt-5">
           <div className="col-lg-5 d-flex flex-row mt-4 turf_intro col-sm-12 col-md-5">
             <div className="landingpage_title ms-5 ps-5">
-              <h1 className="landingpagetxt">
+              <h1 className="landingpagetxt">HAVE A TURF / <br></br> S
                 <AutoTyping
                   active
-                  textRef="HAVE A TURF / SPORTS VENUE"
+                  textRef="PORTS VENUE"
                   writeSpeed={150}
                   deleteSpeed={150}
                   delayToWrite={1000}
@@ -45,13 +45,13 @@ function Landingpage() {
                 <BlinkCursor active blinkSpeed={500} />
               </h1><br></br>
               <div className="landingpage_dsrptn">
-                <p className="dsrptn_txt mt-5 pt-5">
+                <p className="dsrptn_txt">
                   Connect with millions of sportsters by listing your turf on
                   the Enturf App
                 </p>
               </div>
               <div className="turfs d-flex flex-row mt-5 ms-1">
-                <div className=" col-6 TURFS d-flex flex-column mt-4">
+                <div className="col-lg-6 col-4 TURFS d-flex flex-column mt-4">
                   <h6 className="turf_title">MORE THAN</h6>
                   <h1 className="turf_no">
                     <CountUp end={50} redraw={true}>
@@ -65,7 +65,7 @@ function Landingpage() {
                   </h1>
                   <h6 className="turf_dsrptn mt-1">TURFS</h6>
                 </div>
-                <div className=" col-3 USERS d-flex flex-column mt-4">
+                <div className=" col-lg-3 col-8 USERS d-flex flex-column mt-4">
                   <h6 className="turf_title">MORE THAN</h6>
                   <h1 className="turf_no">
                     <CountUp end={7} redraw={true}>

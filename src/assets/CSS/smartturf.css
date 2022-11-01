@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
 
 .smartturf {
-  height: 100vh;
+  height: 93vh;
+  width: 100vw!important;
 }
 
 .Sturf_bg {

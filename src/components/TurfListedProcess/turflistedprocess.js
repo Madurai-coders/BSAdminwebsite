@@ -69,7 +69,6 @@ function TurfListedProcess() {
 
   return (
     <>
-      <div className="mt-5 pt-5">
         <div className="turflistedprocess mt-5 pt-3">
           <div className="row mt-5 justify-content-start">
             <div className="col-12 text-center">
@@ -150,10 +149,10 @@ function TurfListedProcess() {
 
         {Mobile && (
           <>
-            <div className="turflistedprocess lists">
+            <div className="turflistprocess lists">
               <div className="row justify-content-center">
                 <div className="col-9 mt-3 d-flex flex-row st">
-                  <div className="d-flex flex-column mt-4">
+                  <div className="d-flex flex-column mt-4 prog">
                     <div className="circle" onClick={Step_1}>
                       <span className="no1">1</span>
                     </div>
@@ -185,7 +184,7 @@ function TurfListedProcess() {
                     <br></br>
                     <h6 className="slidetxt_2 mt-5">
                       Registration link along with details of personal
-                      <br></br> guide will be sent via email
+                      guide will be sent via email
                     </h6>
                     <br></br>
 
@@ -201,7 +200,6 @@ function TurfListedProcess() {
             </div>
           </>
         )}
-      </div>
     </>
   );
 }
