@@ -167,7 +167,7 @@ function TurfListedProcess() {
                     <button className="circle2" id="circle2" onClick={Step_2}>
                       <span className="no2">2</span>
                     </button>
-                    <div class="w3-light-grey" style={{ height: 70 }}>
+                    <div class="w3-light-grey">
                       <div
                         id="mybar"
                         class="w3-container"

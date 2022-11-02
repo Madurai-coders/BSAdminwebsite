@@ -13,7 +13,7 @@ function Advantage() {
 
   return (
     <>
-      <div className="advantageofenturf ad">
+      <div className="advantageofenturf">
         <div className="row">
           <div className="col-12 text-center">
             <h1 className="advantage_title">ADVANTAGE OF ENTURF</h1>

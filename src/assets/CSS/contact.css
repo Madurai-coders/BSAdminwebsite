@@ -122,12 +122,20 @@
   .contact_title {
     font-size: 35px;
     margin-left: 0px !important;
+    margin-top: 0px !important;
+    position: relative;
+    top: 40px !important;
+  }
+  .form {
+    height: 560px;
   }
   .contact_tit {
-    margin-left: 20px !important;
+    margin-left: 30px !important;
   }
   .contact_list {
-    margin-left: 0px !important;
+    margin-left: 10px !important;
+    position: relative;
+    bottom: 50px !important;
   }
   .calls {
     margin-right: 30px !important;

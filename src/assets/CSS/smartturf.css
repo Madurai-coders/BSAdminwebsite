@@ -184,7 +184,7 @@
     font-size: 21px;
   }
   .smartturf {
-    height: 235vh;
+    height: 230vh;
   }
 }
 @media only screen and (max-width: 364px) {
@@ -196,6 +196,9 @@
   .Sturf_dscrptn{
     font-size: 20px;
     padding: 0 6px;
+  }
+  .smartturf {
+    height: 228vh;
   }
 }
 @media only screen and (max-width: 327px) {
@@ -213,7 +216,7 @@
     font-size: 36px;
   }
   .smartturf {
-    height: 231vh;
+    height: 226vh;
   }
 }
 @media only screen and (max-width: 292px) {

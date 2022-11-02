@@ -29,7 +29,7 @@ function Landingpage() {
           </div>
         </div>
 
-        <div className="row mt-5 auto">
+        <div className="row mt-5 land">
           <div className="col-lg-5 d-flex flex-row mt-4 turf_intro col-sm-12 col-md-5">
             <div className="landingpage_title ms-5 ps-5">
               <h1 className="landingpagetxt">
@@ -66,7 +66,7 @@ function Landingpage() {
                   </h1>
                   <h6 className="turf_dsrptn mt-1">TURFS</h6>
                 </div>
-                <div className=" col-lg-3 col-8 USERS d-flex flex-column mt-4">
+                <div className=" col-lg-3 col-9 USERS d-flex flex-column mt-4">
                   <h6 className="turf_title">MORE THAN</h6>
                   <h1 className="turf_no">
                     <CountUp end={7} redraw={true}>
