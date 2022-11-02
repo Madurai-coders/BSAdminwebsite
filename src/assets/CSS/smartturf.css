@@ -142,6 +142,10 @@
     .Sturf_dscrptn{
       font-size: 19px;
     }
+    .smartturf {
+      height: 250vh;
+    }
+  
     }
     @media only screen and (max-width: 580px) {
       .Sturf_dscrptn{
@@ -179,6 +183,9 @@
   .Sturf_dscrptn{
     font-size: 21px;
   }
+  .smartturf {
+    height: 235vh;
+  }
 }
 @media only screen and (max-width: 364px) {
   .card-description {
@@ -205,6 +212,9 @@
   .Sturf_title{
     font-size: 36px;
   }
+  .smartturf {
+    height: 231vh;
+  }
 }
 @media only screen and (max-width: 292px) {
   .card-description {
@@ -217,152 +227,8 @@
     padding: 0 4px;
 
   }
-}
-/* @media only screen and (max-width: 991px) {
-  .card-description {
-    font-size: 18px;
-    padding: 10px 30px;
-    line-height: 21px;
-  }
-  .Sturf_title {
-    margin-top: 50px;
-  }
   .smartturf {
-    height: 195vh;
-  }
-  .Sturf_cards {
-    background-color: rgb(95, 208, 104);
-  }
-}
-@media only screen and (max-width: 877px) {
-  .card-description {
-    font-size: 16px;
-    padding: 10px 28px;
-    line-height: 21px;
+    height: 229vh;
   }
 }
 
-@media only screen and (max-width: 797px) {
-  .card-description {
-    font-size: 16px;
-    padding: 10px 22px;
-    line-height: 21px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .card-description {
-    font-size: 25px;
-    padding: 10px 22px;
-    line-height: 35px;
-    margin-top: 50px !important;
-  }
-  .card_img {
-    margin-left: 110px !important;
-  }
-  .card {
-    padding-bottom: 80px;
-  }
-
-  .smartturf {
-    height: 330vh;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .card-description {
-    font-size: 22px;
-  }
-  .card_img {
-    margin-left: 80px !important;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .card-description {
-    font-size: 20px;
-  }
-  .card_img {
-    margin-left: 70px !important;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .card {
-    padding-bottom: 120px;
-  }
-  .card-description {
-    line-height: 28px;
-  }
-  .card_img {
-    margin-left: 60px !important;
-  }
-}
-@media only screen and (max-width: 402px) {
-  .card-description {
-    line-height: 28px;
-    font-size: 18px;
-  }
-  .card_img {
-    margin-left: 55px !important;
-  }
-  .Sturf_dscrptn {
-    font-size: 22px;
-  }
-}
-@media only screen and (max-width: 372px) {
-  .card-description {
-    line-height: 25px;
-    font-size: 16px;
-  }
-  .card_img {
-    margin-left: 50px !important;
-  }
-  .Sturf_dscrptn {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 343px) {
-  .card-description {
-    line-height: 23px;
-    font-size: 14px;
-  }
-  .card_img {
-    margin-left: 45px !important;
-  }
-  .Sturf_dscrptn {
-    font-size: 18px;
-  }
-  .Sturf_title {
-    font-size: 39px;
-  }
-}
-@media only screen and (max-width: 314px) {
-  .card-description {
-    line-height: 20px;
-    font-size: 12px;
-  }
-  .card_img {
-    margin-left: 40px !important;
-  }
-  .Sturf_dscrptn {
-    font-size: 17px;
-  }
-
-  .card {
-    padding-bottom: 80px;
-  }
-}
-
-@media only screen and (max-width: 285px) {
-  .card-description {
-    line-height: 17px;
-    font-size: 10px;
-  }
-
-  .Sturf_dscrptn {
-    font-size: 16px;
-  }
-
-  .card {
-    padding-bottom: 60px;
-  }
-} */

@@ -69,7 +69,7 @@ function TurfListedProcess() {
 
   return (
     <>
-        <div className="turflistedprocess mt-5 pt-3">
+        <div className="turflistedprocess mt-5 pt-3 tit">
           <div className="row mt-5 justify-content-start">
             <div className="col-12 text-center">
               <h3 className="process_title pb-5">
@@ -194,8 +194,8 @@ function TurfListedProcess() {
                   </div>
                 </div>
               </div>
-              <div className="col-12 mt-4 text-center">
-                <img src={Form} className="img-fluid mt-5" alt="process"></img>
+              <div className="col-12 text-center">
+                <img src={Form} className="img-fluid mt-5 pr" alt="process"></img>
               </div>
             </div>
           </>

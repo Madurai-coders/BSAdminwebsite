@@ -21,18 +21,19 @@ function Landingpage() {
   return (
     <>
       <div className="landingpage">
-        <div className="row mt-5">
-          <div className="col-6">
-            <h2 className="enturflogo ms-5 ps-5">
+        <div className="row mt-5 justify-content-center auto">
+          <div className="col-lg-11 col-md-11 col-sm-11 col-5">
+            <h2 className="enturflogo ms-4">
               EN<span className="sublogo">TURF</span>
             </h2>
           </div>
         </div>
 
-        <div className="row mt-5">
+        <div className="row mt-5 auto">
           <div className="col-lg-5 d-flex flex-row mt-4 turf_intro col-sm-12 col-md-5">
             <div className="landingpage_title ms-5 ps-5">
-              <h1 className="landingpagetxt">HAVE A TURF / <br></br> S
+              <h1 className="landingpagetxt">
+                HAVE A TURF / <br></br> S
                 <AutoTyping
                   active
                   textRef="PORTS VENUE"
@@ -41,9 +42,9 @@ function Landingpage() {
                   delayToWrite={1000}
                   delayToDelete={2000}
                 />
-                
                 <BlinkCursor active blinkSpeed={500} />
-              </h1><br></br>
+              </h1>
+              <br></br>
               <div className="landingpage_dsrptn">
                 <p className="dsrptn_txt">
                   Connect with millions of sportsters by listing your turf on

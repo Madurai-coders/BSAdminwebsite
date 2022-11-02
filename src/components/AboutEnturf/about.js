@@ -21,7 +21,7 @@ function About() {
             <div  className="col-lg-1 col-md-1 col-sm-1 abtdesign">
           <img src={Aboutdesign} className=" ab" alt="about"></img>
           </div>
-            <div className="col-lg-5 col-md-5 col-sm-11 mt-5">
+            <div className="col-lg-5 col-md-5 col-sm-11 mt-5 ba">
               <div className="about_tit mt-5 pt-5">
                 <h1 className="about_title mt-5">ABOUT ENTURF</h1>
               </div>
@@ -35,7 +35,7 @@ function About() {
           
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div
-                className="Enturfadminwebsite_loader"
+                className="Enturfadminwebsite_loader ab_img"
                 id="lottie"
                 ref={AboutEnturf}
               ></div>

@@ -64,9 +64,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .ab {
-    display: none;
-  }
+ .ab{
+  display: none;
+ }
   .about_title {
     font-size: 50px;
   }
@@ -160,6 +160,7 @@
 @media only screen and (max-width: 410px) {
   .about_title {
     font-size: 33px;
+    margin-top: 0px!important;
   }
 
   .about_dsrptn {
@@ -169,6 +170,14 @@
   .Enturfadminwebsite_loader {
     height: 50vh;
   }
+  .about_tit{
+    margin-top: 0px!important;
+    padding-top: 0px!important;
+  }
+ .ba{
+  position: relative;
+  bottom: 60px;
+ }
 }
 
 @media only screen and (max-width: 371px) {
