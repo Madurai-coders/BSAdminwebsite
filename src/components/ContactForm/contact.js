@@ -233,7 +233,7 @@ function Contact() {
             </div>
             <div className="row justify-content-center">
               <div className="calls col-12 d-flex flex-column text-center">
-                <div className="callus">
+                <div className="callus me-4">
                   <PhoneIcon
                     className="phone"
                     sx={{ fontSize: 27, marginBottom: 1 }}
@@ -241,21 +241,21 @@ function Contact() {
                   <span className="call ms-2">Call us</span>
                   <h6 className="no">(480) 555-0103</h6>
                 </div>
-                <div className="location  mt-5 pt-5">
+                <div className="location  mt-5 pt-5 me-1">
                   <FmdGoodIcon
                     className="phone"
                     sx={{ fontSize: 27, marginBottom: 1 }}
                   ></FmdGoodIcon>
                   <span className="call ms-2">Location</span>
-                  <h6 className="place">Madurai,Tamilnadu</h6>
+                  <h6 className="place ms-3">Madurai,Tamilnadu</h6>
                 </div>
-                <div className="mail  mt-5 pt-5">
+                <div className="mail  mt-5 pt-5 me-4">
                   <LanguageIcon
                     className="phone"
                     sx={{ fontSize: 27, marginBottom: 1 }}
                   ></LanguageIcon>
                   <span className="call ms-2">Mail us</span>
-                  <h6 className="email">enturf@example.com</h6>
+                  <h6 className="email ms-5">enturf@example.com</h6>
                 </div>
               </div>
             </div>

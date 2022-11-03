@@ -13,7 +13,7 @@ function Advantage() {
 
   return (
     <>
-      <div className="advantageofenturf">
+      <div className="advantageofenturf ad">
         <div className="row">
           <div className="col-12 text-center">
             <h1 className="advantage_title">ADVANTAGE OF ENTURF</h1>
@@ -104,7 +104,7 @@ function Advantage() {
         {Mobile && (
           <>
             <div className="row justify-content-center">
-              <div className="col-md-5 col-10 mt-5 d-flex flex-row">
+              <div className="col-md-5 col-10 mt-5 d-flex flex-row ms-1">
                 <div
                   className="increase text-center"
                   data-aos="flip-up"
@@ -119,7 +119,7 @@ function Advantage() {
                 </div>
               </div>
 
-              <div className="col-md-5 col-10 mt-5 d-flex flex-row">
+              <div className="col-md-5 col-10 mt-5 d-flex flex-row ms-1">
                 <div
                   className="increase  text-center"
                   data-aos="flip-up"
@@ -134,7 +134,7 @@ function Advantage() {
                 </div>
               </div>
 
-              <div className="col-md-5 col-10 mt-5 d-flex flex-row">
+              <div className="col-md-5 col-10 mt-5 d-flex flex-row ms-1">
                 <div
                   className="increase text-center"
                   data-aos="flip-up"
@@ -149,7 +149,7 @@ function Advantage() {
                 </div>
               </div>
 
-              <div className="col-md-5 col-10 mt-5 d-flex flex-row">
+              <div className="col-md-5 col-10 mt-5 d-flex flex-row ms-1">
                 <div
                   className="increase text-center"
                   data-aos="flip-up"
@@ -163,7 +163,7 @@ function Advantage() {
                   </h5>
                 </div>
               </div>
-              <div className="col-md-5 col-10 mt-5 d-flex flex-row">
+              <div className="col-md-5 col-10 mt-5 d-flex flex-row ms-1">
                 <div
                   className="increase text-center"
                   data-aos="flip-up"
