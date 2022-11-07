@@ -104,6 +104,9 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  .contactform{
+    margin-top: 150px;
+  }
   .contact_title {
     font-size: 40px;
   }
@@ -119,16 +122,13 @@
     padding: 2.5% 30%;
     font-size: 11px;
   }
-}
-@media only screen and (max-width: 575px) {
-.callus svg{
-  height: 50px!important;
-}
-.location svg{
-  height: 50px!important;
-}
-.mail svg{
-  height: 50px!important;
-}
-
+  .callus svg{
+    height: 50px!important;
+  }
+  .location svg{
+    height: 50px!important;
+  }
+  .mail svg{
+    height: 50px!important;
+  }
 }
