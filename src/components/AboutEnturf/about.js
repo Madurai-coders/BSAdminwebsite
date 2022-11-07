@@ -15,33 +15,32 @@ function About() {
   }, []);
   return (
     <>
-      <div className="about">
         <div className="aboutenturf">
-          <div className="row">
-            <div  className="col-lg-1 col-md-1 col-sm-1 abtdesign">
-          <img src={Aboutdesign} className=" ab" alt="about"></img>
+          <div className="row ">
+            <div  className="col-lg-1 col-md-1 col-sm-0">
+          <img src={Aboutdesign} className="mt-5 pt-5 abt_design" alt="about"></img>
           </div>
-            <div className="col-lg-5 col-md-5 col-sm-11 mt-5 ba">
-              <div className="about_tit mt-5 pt-5">
-                <h1 className="about_title mt-5">ABOUT ENTURF</h1>
-              </div>
-              <div className="about_des mt-5">
-                <p className="about_dsrptn">
+            <div className="col-lg-5 col-md-5 col-11">
+             <div className="about">
+                <h1 className="about_title">ABOUT ENTURF</h1>
+              <div className="about_des">
+                <p className="about_dsrptn mt-5">
                   Your all in one turf Management App that<br></br> converts
                   normal turfs to super powered AI<br></br> enabled turfs.
                 </p>
               </div>
             </div>
+            </div>
+
           
             <div className="col-lg-6 col-md-6 col-sm-12">
               <div
-                className="Enturfadminwebsite_loader ab_img"
+                className="Enturfadminwebsite_loader abt_img"
                 id="lottie"
                 ref={AboutEnturf}
               ></div>
             </div>
           </div>
-        </div>
       </div>
     </>
   );

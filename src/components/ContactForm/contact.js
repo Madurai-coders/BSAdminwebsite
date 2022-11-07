@@ -26,7 +26,7 @@ function Contact() {
       <div className="contactform">
         {Tab && (
           <>
-            <div className="row justify-content-end">
+            <div className="row justify-content-end mt-5">
               <div className="calls col-lg-3 col-md-3 d-flex flex-column">
                 <div className="callus">
                   <PhoneIcon
@@ -241,7 +241,7 @@ function Contact() {
                   <span className="call ms-2">Call us</span>
                   <h6 className="no">(480) 555-0103</h6>
                 </div>
-                <div className="location  mt-5 pt-5 me-1">
+                <div className="location  mt-5 pt-5">
                   <FmdGoodIcon
                     className="phone"
                     sx={{ fontSize: 27, marginBottom: 1 }}

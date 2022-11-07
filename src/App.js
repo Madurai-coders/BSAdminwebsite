@@ -11,12 +11,14 @@ import React, { Component }  from 'react';
 function App() {
   return (
     <>
+    <div>
       <LandingPage></LandingPage>
       <TurfListedProcess></TurfListedProcess>
       <AboutEnturf></AboutEnturf>
       <SmartTurf></SmartTurf>
       <Advantage></Advantage>
       <Contact></Contact>
+      </div>
     </>
   );
 }

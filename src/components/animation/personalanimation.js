@@ -14,12 +14,13 @@ function PersonalAnimation() {
       autoplay: true,
       loop: true,
       animationData: require("../EnturfAnimation/Personal.json"),
+
     });
   }, []);
   return (
     <>
       <div
-        className="Enturflist_loader"
+        className="Enturflist_personal img-fluid"
         id="lottie"
         ref={PersonalDetails}
       ></div>

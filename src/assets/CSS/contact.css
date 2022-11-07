@@ -5,10 +5,12 @@
 .contactform {
   background-color: rgb(239, 250, 240);
   height: 100%;
+  margin-top: 200px;
 }
 .phone {
   color: #5fd068;
 }
+
 .call {
   font-size: 25px;
   font-family: "Montserrat";
@@ -118,36 +120,15 @@
     font-size: 11px;
   }
 }
-@media only screen and (max-width: 400px) {
-  .contact_title {
-    font-size: 35px;
-    margin-left: 0px !important;
-    margin-top: 0px !important;
-    position: relative;
-    top: 40px !important;
-  }
-  .form {
-    height: 560px;
-  }
-  .contact_tit {
-    margin-left: 30px !important;
-  }
-  .contact_list {
-    margin-left: 10px !important;
-    position: relative;
-    bottom: 50px !important;
-  }
-  .calls {
-    margin-right: 30px !important;
-  }
+@media only screen and (max-width: 575px) {
+.callus svg{
+  height: 50px!important;
 }
-@media only screen and (max-width: 370px) {
-  .contact_title {
-    font-size: 30px;
-  }
+.location svg{
+  height: 50px!important;
 }
-@media only screen and (max-width: 300px) {
-  .contact_title {
-    font-size: 25px;
-  }
+.mail svg{
+  height: 50px!important;
+}
+
 }

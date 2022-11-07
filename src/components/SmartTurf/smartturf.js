@@ -20,7 +20,7 @@ function SmartTurf() {
 
       <div className="smartturf">
         <div className="Sturf_bg text-center">
-          <div className="Sturf_tit mt-5 pt-5">
+          <div className="Sturf_tit">
             <h3 className="Sturf_title">SMART TURF</h3>
             <p className="Sturf_dscrptn mt-4">
               How to convert Your turf to an AI powerd video recording turf ?

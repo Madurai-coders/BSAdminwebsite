@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
 
-.smartturf {
-  height: 93vh;
-  width: 100vw!important;
-}
 
 .Sturf_bg {
   background-image: url("../images/Sturfbg.svg");
@@ -15,7 +11,7 @@
   font-family: "Lexend Deca";
   font-size: Medium;
   font-size: 43px;
-  line-height: 170%;
+  line-height: 390%;
   color: white;
 }
 .Sturf_dscrptn {
@@ -72,18 +68,14 @@
   .card {
     margin-top: 0px !important;
   }
-  .smartturf {
-    height: 105vh;
-  }
+ 
 }
 @media only screen and (max-width: 1217px) {
   .card-description {
     padding: 0 10px;
     line-height: 22px;
   }
-  .smartturf {
-    height: 110vh;
-  }
+ 
 }
 @media only screen and (max-width: 1156px) {
   .card-description {
@@ -113,9 +105,7 @@
   .cardsimg {
     margin-right: 10px !important;
   }
-  .smartturf {
-    height: 160vh;
-  }
+  
 }
 @media only screen and (max-width: 768px) {
   .card {
@@ -128,9 +118,7 @@
     margin-right: 0px !important;
   }
 
-  .smartturf {
-    height: 260vh;
-  }
+ 
 
 }
 @media only screen and (max-width: 700px) {
@@ -142,9 +130,7 @@
     .Sturf_dscrptn{
       font-size: 19px;
     }
-    .smartturf {
-      height: 250vh;
-    }
+   
   
     }
     @media only screen and (max-width: 580px) {
@@ -183,9 +169,7 @@
   .Sturf_dscrptn{
     font-size: 21px;
   }
-  .smartturf {
-    height: 230vh;
-  }
+  
 }
 @media only screen and (max-width: 364px) {
   .card-description {
@@ -197,9 +181,7 @@
     font-size: 20px;
     padding: 0 6px;
   }
-  .smartturf {
-    height: 228vh;
-  }
+ 
 }
 @media only screen and (max-width: 327px) {
   .card-description {
@@ -215,9 +197,7 @@
   .Sturf_title{
     font-size: 36px;
   }
-  .smartturf {
-    height: 226vh;
-  }
+
 }
 @media only screen and (max-width: 292px) {
   .card-description {
@@ -230,8 +210,6 @@
     padding: 0 4px;
 
   }
-  .smartturf {
-    height: 229vh;
-  }
+  
 }
 
