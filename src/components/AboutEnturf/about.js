@@ -34,11 +34,13 @@ function About() {
 
           
             <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="ab_img">
               <div
-                className="Enturfadminwebsite_loader abt_img"
+                className="Enturfadminwebsite_about abt_img"
                 id="lottie"
                 ref={AboutEnturf}
               ></div>
+              </div>
             </div>
           </div>
       </div>
