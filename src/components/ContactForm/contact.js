@@ -147,10 +147,10 @@ function Contact() {
             <div className="row justify-content-center">
               <div className="col-12">
                 <div className=" form me-5" data-aos="zoom-in">
-                  <div className="contact_tit ms-5">
+                  <div className="contact_tit ms-3">
                     <h2 className="contact_title ms-4">Contact Now</h2>
                   </div>
-                  <div className="contact_list ms-5 me-5 ps-4">
+                  <div className="contact_list ms-3 me-5 ps-4">
                     <TextField
                       value={contactform.Name}
                       onChange={(e) =>
