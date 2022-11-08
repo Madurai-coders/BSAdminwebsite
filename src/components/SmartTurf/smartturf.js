@@ -41,7 +41,7 @@ function SmartTurf() {
             <div data-aos="fade-up" data-aos-duration="1100">
 
               <Card
-                className="mt-5"
+                className="mt-5 me-3"
                 img={Card2_img}
                 description="Our AI specialist will complete the camera installation setup in Your turf"
               ></Card> </div>

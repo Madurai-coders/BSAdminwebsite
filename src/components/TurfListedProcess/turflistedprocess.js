@@ -82,7 +82,7 @@ function TurfListedProcess() {
              
 
             <div className="row step_process">  
-              <div className="col-7">
+              <div className="col-6 sp">
               <div className="d-flex flex-row">
               <div className="el_1">
                   <img src={SEllipse} alt="elipse" className=""></img>
@@ -96,7 +96,7 @@ function TurfListedProcess() {
                 </div>
               </div>
 
-              <div className="col-5">
+              <div className="col-6 sp">
                 <div className="d-flex flex-row steps_process">
                 <div className="d-flex flex-column">
                   <div className="circle" onClick={Step_1}>
@@ -155,7 +155,7 @@ function TurfListedProcess() {
         <>
           <div className="turflistprocess">
             <div className="row justify-content-end">
-              <div className="col-md-9 col-11 d-flex flex-row">
+              <div className="col-md-9 col-11 d-flex flex-row mt-5">
                 <div className="d-flex flex-column">
                   <div className="circle" onClick={Step_1}>
                     <span className="no1">1</span>
@@ -199,7 +199,9 @@ function TurfListedProcess() {
               </div>
             </div>
             <div className="col-12 text-center">
-              <img src={Form} className="img-fluid mt-5 pr" alt="process"></img>
+              <div className="animation">
+            <PersonalAnimation />
+            </div>
             </div>
           </div>
         </>

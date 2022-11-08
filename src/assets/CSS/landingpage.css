@@ -103,9 +103,9 @@
 }
 .users {
   position: relative;
-  right: 20px;
+  right: 13px;
 }
-.Enturfadminwebsite_loader{
+.Enturfadminwebsite_loader {
   height: 100vh;
   overflow-y: hidden;
 }
@@ -116,7 +116,7 @@
 }
 @media only screen and (max-width: 1514px) {
   .landingpagetxt {
-    font-size: 64px;
+    font-size: 63px;
     line-height: 90px;
   }
   .landingpage_dsrptn {
@@ -146,9 +146,22 @@
     font-size: 30px;
   }
 }
+@media only screen and (max-width: 1242px) {
+  .land_img {
+    height: 590px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 1206px) {
+  .landingpagetxt {
+    font-size: 57px;
+    line-height: 90px;
+  }
+}
 @media only screen and (max-width: 1185px) {
   .land_img {
-    height: 580px;
+    height: 570px;
     overflow-y: hidden;
     overflow-x: hidden;
   }
@@ -174,15 +187,147 @@
   }
 }
 
+@media only screen and (max-width: 1006px) {
+  .land_img {
+    height: 556px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .landingpagetxt {
+    font-size: 44px;
+    line-height: 70px;
+  }
+  .landingpage_dsrptn {
+    font-size: 18px;
+    position: relative;
+    bottom: 30px;
+  }
+  .enturflogo {
+    font-size: 26px;
+    margin-left: 2px;
+  }
+  .turf_no {
+    font-size: 52px;
+  }
+  .user_no {
+    font-size: 52px;
+  }
+  .turfs {
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (max-width: 913px) {
+.Enturfadminwebsite_loader  svg {
+    height: 550px !important;
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .land_img {
+    height: 530px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .landingpagetxt {
+    font-size: 38px;
+    line-height: 70px;
+  }
+  .landingpage_dsrptn {
+    font-size: 16px;
+    position: relative;
+    bottom: 30px;
+  }
+
+  .turf_no {
+    font-size: 49px;
+  }
+  .user_no {
+    font-size: 49px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .TURFS {
+    text-align: center;
+  }
+  .lp_logo {
+    text-align: center;
+  }
+  .enturflogo {
+    font-size: 52px;
+    margin-left: 0px !important;
+  }
+  .landingpage_title {
+    padding: 0px 10px;
+  }
+  .landingpagetxt {
+    font-size: 48px;
+    line-height: 70px;
+    width: 80%;
+  }
+  .landingpage_dsrptn {
+    font-size: 25px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .turf_title {
+    font-size: 15px;
+    margin-left: -20px !important;
+  }
+  .turf_dsrptn {
+    margin-left: -40px !important;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .land_img {
+    height: 480px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .lg {
+    margin-top: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .enturflogo {
+    font-size: 46px;
+  }
+  .landingpage_title {
+    padding: 0px 0px;
+  }
+  .landingpagetxt {
+    font-size: 40px;
+    line-height: 65px;
+  }
+  .landingpage_dsrptn {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .turf_title {
+    font-size: 13px;
+    margin-left: -20px !important;
+  }
+  .turf_dsrptn {
+    margin-left: -40px !important;
+    font-size: 13px;
+  }
+  .land_img {
+    height: 430px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
 @media only screen and (max-width: 415px) {
   #lottie {
     height: 70vh;
     width: 100%;
     overflow-y: hidden !important;
   }
-  .lg {
-    margin-top: 20px !important;
-  }
+
   .landingpage {
     padding: 0px 25px;
   }
@@ -213,7 +358,6 @@
   }
   .enturflogo {
     font-size: 40px;
-    padding: 0px 30%;
     text-align: center;
   }
   .turf_no {
@@ -225,7 +369,7 @@
     margin-left: 25px;
   }
   .users {
-    margin-left: 10px !important;
+    margin-left: 1px !important;
   }
   .turf_title {
     font-size: 12px;
@@ -245,7 +389,7 @@
 }
 
 @media only screen and (max-width: 352px) {
-  svg {
+.Enturfadminwebsite_loader  svg {
     height: 400px !important;
     overflow-y: hidden;
   }
@@ -283,11 +427,11 @@
     font-size: 9px;
   }
   .users {
-    margin-left: 15px !important;
+    margin-left: 5px !important;
   }
   .turfs {
     position: relative;
-    bottom: 118px;
+    bottom: 90px;
   }
   .landingpage_title {
     height: 290px;

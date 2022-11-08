@@ -22,7 +22,7 @@ function Landingpage() {
     <>
       <div className="landingpage">
         <div className="row mt-5 lg">
-          <div className="col-lg-11 col-md-11 col-10">
+          <div className="col-lg-11 col-md-11 col-12 col-sm-12 lp_logo">
             <h2 className="enturflogo">
               EN<span className="sublogo">TURF</span>
             </h2>
@@ -30,7 +30,7 @@ function Landingpage() {
         </div>
 
         <div className="row mt-5 TURFS">
-          <div className="col-lg-5 d-flex flex-row mt-4 turf_intro col-sm-12 col-md-5">
+          <div className="col-lg-5 d-flex flex-row mt-4 turf_intro col-md-5 col-sm-12">
             <div className="landingpage_title">
               <h1 className="landingpagetxt">
                 HAVE A TURF / <br></br> S
@@ -93,7 +93,6 @@ function Landingpage() {
                   ref={Landingpage}
                 ></div>
             </div>
-    
           </div>
         </div>
       </div>
