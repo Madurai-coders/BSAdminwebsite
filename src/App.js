@@ -13,11 +13,12 @@ function App() {
     <>
     <div>
       <LandingPage></LandingPage>
-      <TurfListedProcess></TurfListedProcess>
+    
+      {/* <TurfListedProcess></TurfListedProcess>
       <AboutEnturf></AboutEnturf>
       <SmartTurf></SmartTurf>
       <Advantage></Advantage>
-      <Contact></Contact>
+      <Contact></Contact> */}
       </div>
     </>
   );

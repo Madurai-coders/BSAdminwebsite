@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&display=swap");
+.turflistedprocess{
+  max-width: fit-content;
+}
+
+
+
+
 .process_title {
   font-family: "Lexend Deca";
   font-style: normal;

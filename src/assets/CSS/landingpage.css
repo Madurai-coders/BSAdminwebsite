@@ -4,7 +4,6 @@
 .landingpage {
   overflow-x: hidden;
   box-shadow: 0px 4px 23px rgba(138, 138, 138, 0.07);
-  padding: 0px 60px;
 }
 
 .enturflogo {
@@ -13,13 +12,17 @@
   font-weight: 700;
   font-size: 34.2612px;
   line-height: 123.68%;
+  padding: 0px 70px;
+}
+.sublogo {
+  color: #5fd068;
 }
 .landingpagetxt {
   position: absolute;
   width: 40%;
 }
-.sublogo {
-  color: #5fd068;
+.landingpage_title{
+  padding: 0px 70px;
 }
 .enturf_logintxt {
   font-family: "Lexend Deca";
@@ -50,7 +53,7 @@
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 800;
-  font-size: 67px;
+  font-size: 75px;
   line-height: 99px;
   color: #2b2b35;
 }
@@ -60,7 +63,14 @@
   font-weight: 400;
   font-size: 26px;
   line-height: 149.52%;
-  margin-top: 240px;
+  margin-top: 260px;
+}
+.landingpage_img{
+  position: relative;
+  bottom: 65px;
+}
+.land_img{
+  padding: 0px 0px;
 }
 .USERS {
   margin-top: 2px;
@@ -109,7 +119,7 @@
   height: 100vh;
   overflow-y: hidden;
 }
-@media only screen and (max-width: 1655px) {
+/* @media only screen and (max-width: 1655px) {
   .landingpage_img {
     margin-top: -40px;
   }
@@ -436,4 +446,4 @@
   .landingpage_title {
     height: 290px;
   }
-}
+} */

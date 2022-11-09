@@ -86,7 +86,7 @@ function Landingpage() {
               </div>
           </div>
             <div className="col-lg-7 col-md-7 col-12 land_img">
-              <div className="landingpage_img">
+              <div className="landingpage_img ps-5">
                 <div
                   className="Enturfadminwebsite_loader"
                   id="lottie"

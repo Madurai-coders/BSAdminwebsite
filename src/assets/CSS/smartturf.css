@@ -6,6 +6,8 @@
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 140%;
+
 }
 .Sturf_title {
   font-family: "Lexend Deca";
