@@ -1,7 +1,6 @@
 import "../../assets/CSS/landingpage.css";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-// import Header_img from '../../assets/images/Header.svg';
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
 import AutoTyping, { BlinkCursor } from "react-auto-typing";
@@ -13,7 +12,7 @@ function Landingpage() {
       container: Landingpage.current,
       renderer: "svg",
       autoplay: true,
-      loop: true,
+      loop: false,
       animationData: require("../EnturfAnimation/Landing.json"),
     });
   }, []);
@@ -24,7 +23,7 @@ function Landingpage() {
         <div className="row mt-5 lg">
           <div className="col-lg-11 col-md-11 col-12 col-sm-12 lp_logo">
             <h2 className="enturflogo">
-              EN<span className="sublogo">TURF</span>
+              ENTURF
             </h2>
           </div>
         </div>
@@ -52,8 +51,8 @@ function Landingpage() {
                 </p>
               </div>
 
-              <div className="turfs d-flex flex-row mt-5">
-                <div className="col-lg-6 col-6 TURFS d-flex flex-column mt-4">
+              <div className="d-flex flex-row mt-5">
+                <div className="col-lg-6 col-6 d-flex flex-column mt-4">
                   <h6 className="turf_title">MORE THAN</h6>
                   <h1 className="turf_no">
                     <CountUp end={50} redraw={true}>
@@ -67,7 +66,7 @@ function Landingpage() {
                   </h1>
                   <h6 className="turf_dsrptn mt-1 me-2">TURFS</h6>
                 </div>
-                <div className="col-lg-4 col-6 TURFS d-flex flex-column mt-4">
+                <div className="col-lg-4 col-6 d-flex flex-column mt-4">
                   <h6 className="turf_title">MORE THAN</h6>
                   <h1 className="user_no">
                     <CountUp end={7} redraw={true}>
@@ -85,10 +84,10 @@ function Landingpage() {
 
               </div>
           </div>
-            <div className="col-lg-7 col-md-7 col-12 land_img">
+            <div className="col-lg-7 col-md-7 col-12">
               <div className="landingpage_img ps-5">
                 <div
-                  className="Enturfadminwebsite_loader"
+                  className="Enturfadminwebsite_loader img-fluid"
                   id="lottie"
                   ref={Landingpage}
                 ></div>
