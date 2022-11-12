@@ -8,8 +8,9 @@ function Smartturf() {
       <div className="aboutsmartturf">
         <div className="row justify-content-end">
           <div className="col-2">
-            <img src={Aboutcamera} className="aboutcamera" alt="about"></img>
+            <img src={Aboutcamera} className="aboutcamera ms-4 img-fluid" alt="about"></img>
           </div>
+
         </div>
         <div className="row mt-5 justify-content-center">
           <div className="col-12 text-center mt-5">

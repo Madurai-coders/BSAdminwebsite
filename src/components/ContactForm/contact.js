@@ -60,7 +60,8 @@ function Contact() {
             </div>
           </div>
 
-          <div className="col-6 mt-2 form" data-aos="zoom-in">
+          <div className="col-7 mt-2" data-aos="zoom-in">
+          <div className="form ms-5" data-aos="zoom-in">
             <div className="contact_tit ms-5">
               <h2 className="contact_title ms-4">Contact Now</h2>
             </div>
@@ -140,6 +141,8 @@ function Contact() {
                     Submit Form
                   </button>
                 </div>
+                </div>
+
               </div>
             </div>
           </div>

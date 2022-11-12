@@ -14,10 +14,10 @@ function AIsmartturf() {
               <div className="covertturf_title">
                 <h1 className="title">
                 Covert your turf, Into AI powered smart turf in</h1>
-                <div className="d-flex flex-row ms-5 mt-4 pt-2 ps-5">
-                  <h1 className="sub_title ms-5">0 Investment</h1>
-                  <h1 className="sub_title ms-5">0 Efforts</h1>
-                  <h1 className="sub_title ms-5">0 Maintanence</h1>
+                <div className="mt-4 pt-2">
+                  <h1 className="sub_title">0 Investment
+                  <span className="sub_title">0 Efforts</span>
+                  <span>0 Maintanence</span></h1>
                 </div>
                 <div className="checkbutton pt-5">
                 <button type="button" className="check_btn btn btn-success">Check Eligibility Today</button>

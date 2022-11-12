@@ -9,17 +9,17 @@ function Landingpage() {
   return (
     <>
       <div className="landingpage">
-        <div className="row mt-5 lg">
-          <div className="col-lg-11 col-md-11 col-12 col-sm-12 lp_logo">
-            <h2 className="enturflogo">ENTURF</h2>
+        <div className="row mt-5">
+          <div className="col-2 text-center">
+            <h2 className="enturflogo ms-5 ps-4">ENTURF</h2>
           </div>
         </div>
 
-        <div className="row mt-5 TURFS">
+        <div className="row mt-5 TURFS justify-content-center">
           <div className="col-lg-6 d-flex flex-row mt-4 turf_intro col-md-5 col-sm-12">
             <div className="landingpage_title">
               <h1 className="landingpagetxt">
-                HAVE A TURF / <br></br> S
+                HAVE A TURF / <br></br>S
                 <AutoTyping
                   active
                   textRef="PORTS VENUE"
@@ -70,7 +70,7 @@ function Landingpage() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className="col-6 text-center">
             <img src={Landingpage_img} className=" landingpage_img ps-5 ms-5" alt="landing"></img>
           </div>
         </div>

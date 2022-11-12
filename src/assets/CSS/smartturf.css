@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Nunito:wght@500&display=swap');
 
 
-.aboutcamera {
+/* .aboutcamera {
   margin-left: 30px;
-}
+} */
 .aboutturf_title {
   font-family: "Nunito";
   font-style: normal;
@@ -21,4 +21,8 @@
        line-height: 123.68%;
        letter-spacing: 0.06em;
        color: white;
+}
+.about{
+       margin: 0px 0px;
+       padding: 0px 0px;
 }

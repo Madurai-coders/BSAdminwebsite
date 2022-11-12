@@ -19,7 +19,7 @@ function Advantage() {
               <h5 className="advantage_txt">Technologically superior turf</h5>
             </div>
           </div>
-          <div className="col-4 mt-5">
+          <div className="col-4 mt-5 text-center">
             <img src={Advantage_img} className="" alt="ad"></img>
           </div>
           <div className="col-4 text-center">

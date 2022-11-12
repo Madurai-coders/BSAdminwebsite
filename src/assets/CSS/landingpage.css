@@ -11,12 +11,11 @@
   font-weight: 700;
   font-size: 34.2612px;
   line-height: 123.68%;
-  padding: 0px 100px;
   color: white;
 }
 
 .landingpage_title{
-  padding: 0px 100px;
+  padding: 0px 80px;
 }
 .landingpagetxt {
   font-family: 'Nunito';
@@ -58,6 +57,7 @@
   color:white;
   line-height: 85%;
   margin-left: -5px;
+
 }
 .user_no {
   font-family: "Lexend Deca";
@@ -66,6 +66,7 @@
   font-size: 64px;
   color:white;
   line-height: 85%;
+
 }
 .turf_dsrptn {
   font-family: "Lexend Deca";
@@ -73,6 +74,7 @@
   font-weight: 500;
   font-size: 14px;
   color:white;
+
 }
 .users {
   position: relative;
