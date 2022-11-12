@@ -9,14 +9,14 @@ function Landingpage() {
   return (
     <>
       <div className="landingpage">
-        <div className="row mt-5">
-          <div className="col-2 text-center">
-            <h2 className="enturflogo ms-5 ps-4">ENTURF</h2>
+        <div className="row mt-5 justify-content-end">
+          <div className="col-11">
+            <h2 className="enturflogo">ENTURF</h2>
           </div>
         </div>
 
-        <div className="row mt-5 TURFS justify-content-center">
-          <div className="col-lg-6 d-flex flex-row mt-4 turf_intro col-md-5 col-sm-12">
+        <div className="row mt-5 justify-content-end">
+          <div className="col-6 d-flex flex-row mt-4 turf_intro col-md-5 col-sm-12">
             <div className="landingpage_title">
               <h1 className="landingpagetxt">
                 HAVE A TURF / <br></br>S
@@ -71,7 +71,7 @@ function Landingpage() {
             </div>
           </div>
           <div className="col-6 text-center">
-            <img src={Landingpage_img} className=" landingpage_img ps-5 ms-5" alt="landing"></img>
+            <img src={Landingpage_img} className="landingpage_img" alt="landing"></img>
           </div>
         </div>
       </div>
