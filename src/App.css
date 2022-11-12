@@ -1,6 +1,9 @@
 
 body{
   overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("./assets/images/background.svg");
+background-color:  rgb(85,210,111);
 }
 ::-webkit-scrollbar {
 display: none;

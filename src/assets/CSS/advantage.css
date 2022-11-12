@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Nunito:wght@700&display=swap");
+
+.advantage_title {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  letter-spacing: 0.06em;
+  line-height: 194.18%;
+  color: white;
+}
+.advantage_1 {
+  width: 57%;
+  height: 50px;
+  background-color: white;
+  border-radius: 18.38px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 130px;
+  margin-top: 100px;
+}
+.advantage_2 {
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  border-radius: 18.38px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 220px;
+  margin-left: 40px;
+}
+.advantage_3 {
+  width: 85%;
+  height: 50px;
+  background-color: white;
+  border-radius: 18.38px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 180px;
+}
+.advantage_4 {
+  width: 82%;
+  height: 50px;
+  background-color: white;
+  border-radius: 18.38px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 200px;
+  margin-left: 40px;
+}
+.advantage_5 {
+  width: 65%;
+  height: 50px;
+  background-color: white;
+  border-radius: 18.38px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 100px;
+}
+.advantage_txt {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 51px;
+  letter-spacing: 0.06em;
+  color: #4a2f2f;
+}

@@ -1,35 +1,22 @@
 import "../../assets/CSS/landingpage.css";
+import React, { Component } from "react";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
-import React, { useEffect, useRef } from "react";
-import lottie from "lottie-web";
 import AutoTyping, { BlinkCursor } from "react-auto-typing";
-
+import Landingpage_img from "../../assets/images/landingpage.svg";
 function Landingpage() {
-  const Landingpage = useRef(null);
-  useEffect(() => {
-    lottie.loadAnimation({
-      container: Landingpage.current,
-      renderer: "svg",
-      autoplay: true,
-      loop: false,
-      animationData: require("../EnturfAnimation/Landing.json"),
-    });
-  }, []);
-
+ 
   return (
     <>
       <div className="landingpage">
         <div className="row mt-5 lg">
           <div className="col-lg-11 col-md-11 col-12 col-sm-12 lp_logo">
-            <h2 className="enturflogo">
-              ENTURF
-            </h2>
+            <h2 className="enturflogo">ENTURF</h2>
           </div>
         </div>
 
         <div className="row mt-5 TURFS">
-          <div className="col-lg-5 d-flex flex-row mt-4 turf_intro col-md-5 col-sm-12">
+          <div className="col-lg-6 d-flex flex-row mt-4 turf_intro col-md-5 col-sm-12">
             <div className="landingpage_title">
               <h1 className="landingpagetxt">
                 HAVE A TURF / <br></br> S
@@ -80,18 +67,11 @@ function Landingpage() {
                   </h1>
                   <h6 className="turf_dsrptn mt-1 ms-1">USERS</h6>
                 </div>
-                </div>
-
               </div>
-          </div>
-            <div className="col-lg-7 col-md-7 col-12">
-              <div className="landingpage_img ps-5">
-                <div
-                  className="Enturfadminwebsite_loader img-fluid"
-                  id="lottie"
-                  ref={Landingpage}
-                ></div>
             </div>
+          </div>
+          <div className="col-lg-6">
+            <img src={Landingpage_img} className=" landingpage_img ps-5 ms-5" alt="landing"></img>
           </div>
         </div>
       </div>

@@ -1,14 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
-
-.landingpage {
-  background-image: url("../images/landingpage.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  width: 100%;
-  max-width: 140%;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Nunito:wght@800&display=swap');
+ .landingpage {
   overflow-x: hidden;
-}
+} 
 
 .enturflogo {
   font-family: "Kodchasan";
@@ -16,15 +11,15 @@
   font-weight: 700;
   font-size: 34.2612px;
   line-height: 123.68%;
-  padding: 0px 80px;
+  padding: 0px 100px;
   color: white;
 }
 
 .landingpage_title{
-  padding: 0px 80px;
+  padding: 0px 100px;
 }
 .landingpagetxt {
-  font-family: "Lexend Deca";
+  font-family: 'Nunito';
   font-style: normal;
   font-weight: 800;
   font-size: 75px;
@@ -35,9 +30,9 @@
 
 }
 .landingpage_dsrptn {
-  font-family: "Lexend Deca";
+  font-family: 'Nunito';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 26px;
   line-height: 149.52%;
   margin-top: 260px;
@@ -48,7 +43,7 @@
 .turf_title {
   font-family: "Lexend Deca";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 14px;
   position: relative;
   top: 10px;
@@ -87,7 +82,7 @@
 /* landingpage_image */
 .landingpage_img{
   position: relative;
-  bottom: 45px;
+  bottom: 35px;
 }
 .Enturfadminwebsite_loader {
   height: 100vh;
