@@ -9,14 +9,14 @@ function Landingpage() {
   return (
     <>
       <div className="landingpage">
-        <div className="row mt-5 justify-content-end">
-          <div className="col-11">
+        <div className="row justify-content-end">
+          <div className="col-lg-11 col-md-11 col-sm-11 col-12">
             <h2 className="enturflogo">ENTURF</h2>
           </div>
         </div>
 
-        <div className="row mt-5 justify-content-end">
-          <div className="col-6 d-flex flex-row mt-4 turf_intro col-md-5 col-sm-12">
+        <div className="row mt-5 justify-content-end TURF">
+          <div className="col-lg-6 col-md-6 col-sm-12 d-flex flex-row mt-4 turf_intro">
             <div className="landingpage_title">
               <h1 className="landingpagetxt">
                 HAVE A TURF / <br></br>S
@@ -38,8 +38,8 @@ function Landingpage() {
                 </p>
               </div>
 
-              <div className="d-flex flex-row mt-5">
-                <div className="col-lg-6 col-6 d-flex flex-column mt-4">
+              <div className="d-flex flex-row mt-5 turf_user">
+                <div className="col-lg-5 col-md-5 col-sm-6 col-7 d-flex flex-column mt-4 USERS">
                   <h6 className="turf_title">MORE THAN</h6>
                   <h1 className="turf_no">
                     <CountUp end={50} redraw={true}>
@@ -53,7 +53,7 @@ function Landingpage() {
                   </h1>
                   <h6 className="turf_dsrptn mt-1 me-2">TURFS</h6>
                 </div>
-                <div className="col-lg-4 col-6 d-flex flex-column mt-4">
+                <div className="col-lg-5 col-md-5 col-sm-5 col-4 d-flex flex-column mt-4 USERS">
                   <h6 className="turf_title">MORE THAN</h6>
                   <h1 className="user_no">
                     <CountUp end={7} redraw={true}>
@@ -70,8 +70,8 @@ function Landingpage() {
               </div>
             </div>
           </div>
-          <div className="col-6 text-center">
-            <img src={Landingpage_img} className="landingpage_img" alt="landing"></img>
+          <div className="col-lg-5 col-md-5 col-sm-12 text-center">
+            <img src={Landingpage_img} className="landingpage_img img-fluid" alt="landing"></img>
           </div>
         </div>
       </div>

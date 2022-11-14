@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Nunito:wght@800&display=swap');
- .landingpage {
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Nunito:wght@800&display=swap");
+.landingpage {
   overflow-x: hidden;
-} 
+  overflow-y: hidden;
+}
 
 .enturflogo {
   font-family: "Kodchasan";
@@ -12,28 +13,27 @@
   font-size: 34.2612px;
   line-height: 123.68%;
   color: white;
+  margin-top: 55px;
 }
 
-
 .landingpagetxt {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 800;
   font-size: 75px;
   line-height: 99px;
-  color:white;
+  color: white;
   position: absolute;
   width: 40%;
-
 }
 .landingpage_dsrptn {
-  font-family: 'Nunito';
+  font-family: "Nunito";
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
   line-height: 149.52%;
+  color: white;
   margin-top: 260px;
-  color:white;
 }
 
 /* turf_number */
@@ -44,35 +44,34 @@
   font-size: 14px;
   position: relative;
   top: 10px;
-  color:white;
-
+  color: white;
 }
 .turf_no {
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
-  color:white;
+  color: white;
   line-height: 85%;
   margin-left: -5px;
-
 }
 .user_no {
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
-  color:white;
+  color: white;
   line-height: 85%;
-
+}
+.landingpage_dsrptn {
+  width: 80%;
 }
 .turf_dsrptn {
   font-family: "Lexend Deca";
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  color:white;
-
+  font-size: 15px;
+  color: white;
 }
 .users {
   position: relative;
@@ -80,12 +79,246 @@
 }
 
 /* landingpage_image */
-.landingpage_img{
+.landingpage_img {
   position: relative;
   bottom: 35px;
 }
-.Enturfadminwebsite_loader {
-  height: 100vh;
-  overflow-y: hidden;
+
+@media only screen and (max-width: 1508px) {
+  .landingpagetxt {
+    width: 100%;
+  }
+  .landingpage_dsrptn {
+    width: 100%;
+  }
 }
 
+@media only screen and (max-width: 1201px) {
+  .enturflogo {
+    margin-top: 25px;
+  }
+  .landingpagetxt {
+    font-size: 60px;
+    line-height: 75px;
+  }
+  .landingpage_dsrptn {
+    font-size: 23px;
+    width: 80%;
+    margin-top: 200px;
+  }
+  .USERS {
+    margin-top: 0px !important;
+  }
+  .landingpage_title {
+    margin-bottom: 70px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .enturflogo {
+    font-size: 30px;
+  }
+  .turf_intro {
+    margin-top: 0px !important;
+  }
+  .landingpagetxt {
+    font-size: 43px;
+    line-height: 55px;
+  }
+  .landingpage_dsrptn {
+    font-size: 21px;
+    width: 100%;
+    margin-top: 160px;
+  }
+  .turf_title {
+    font-size: 13px;
+    position: relative;
+    top: 0px;
+  }
+  .turf_dsrptn {
+    font-size: 14px;
+    margin-top: 10px !important;
+  }
+  .turf_no {
+    font-size: 60px;
+    line-height: 40%;
+  }
+  .user_no {
+    font-size: 60px;
+    line-height: 40%;
+  }
+  .users {
+    position: relative;
+    right: 15px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .landingpage_title {
+    text-align: center !important;
+  }
+  .enturflogo {
+    font-size: 35px;
+  }
+  .landingpagetxt {
+    font-size: 65px;
+    line-height: 99px;
+  }
+  .landingpage_dsrptn {
+    font-size: 23px;
+    margin-top: 230px;
+    padding: 0px 110px;
+  }
+  .turf_title {
+    font-size: 15px;
+    margin-left: -60px;
+  }
+  .turf_no {
+    font-size: 70px;
+  }
+  .user_no {
+    font-size: 70px;
+  }
+  .turf_dsrptn {
+    font-size: 15px;
+    margin-left: -85px !important;
+  }
+  .users {
+    position: relative;
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .enturflogo {
+    font-size: 30px;
+    padding: 0px 20px;
+  }
+  .landingpagetxt {
+    font-size: 52px;
+    line-height: 80px;
+  }
+  .landingpage_dsrptn {
+    font-size: 22px;
+    margin-top: 200px;
+    padding: 0px 55px;
+  }
+  .turf_title {
+    font-size: 14px;
+  }
+  .turf_no {
+    font-size: 65px;
+  }
+  .user_no {
+    font-size: 65px;
+  }
+  .turf_dsrptn {
+    font-size: 14px;
+  }
+  .landingpage_img {
+    margin-left: 13px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .enturflogo {
+    font-size: 25px;
+  }
+  .landingpagetxt {
+    font-size: 45px;
+    line-height: 70px;
+  }
+  .landingpage_dsrptn {
+    font-size: 20px;
+    margin-top: 190px;
+    padding: 0px 10px;
+  }
+  .turf_title {
+    font-size: 13px;
+  }
+  .turf_no {
+    font-size: 56px;
+  }
+  .user_no {
+    font-size: 56px;
+  }
+  .turf_dsrptn {
+    font-size: 13px;
+  }
+  .landingpage_title {
+    padding: 0px 5px;
+  }
+  .users {
+    position: relative;
+    right: 14px;
+  }
+  .TURF {
+    margin-top: 5px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .enturflogo {
+    font-size: 20px;
+    margin-top: 15px !important;
+  }
+  .landingpagetxt {
+    font-size: 40px;
+    line-height: 54px;
+  }
+  .landingpage_dsrptn {
+    font-size: 17px;
+    margin-top: 140px;
+    padding: 0px 10px;
+  }
+  .turf_user {
+    margin-top: 25px !important;
+  }
+  .turf_title {
+    font-size: 11px;
+    margin-left: -35px !important;
+  }
+  .turf_no {
+    font-size: 43px;
+    line-height: 5px;
+  }
+  .user_no {
+    font-size: 43px;
+    line-height: 5px;
+  }
+  .turf_dsrptn {
+    font-size: 11px;
+    margin-left: -50px !important;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .enturflogo {
+    font-size: 18px;
+    margin-top: 15px !important;
+  }
+  .landingpagetxt {
+    font-size: 33px;
+    line-height: 50px;
+  }
+  .landingpage_dsrptn {
+    font-size: 15px;
+    margin-top: 140px;
+    padding: 0px 10px;
+  }
+
+  .turf_title {
+    font-size: 11px;
+    margin-left: -25px !important;
+  }
+  .turf_no {
+    font-size: 40px;
+  }
+  .user_no {
+    font-size: 40px;
+  }
+  .turf_dsrptn {
+    font-size: 11px;
+    margin-left: -40px !important;
+  }
+}

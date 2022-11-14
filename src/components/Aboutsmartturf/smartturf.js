@@ -12,11 +12,11 @@ function Smartturf() {
           </div>
 
         </div>
-        <div className="row mt-5 justify-content-center">
-          <div className="col-12 text-center mt-5">
+        <div className="row mt-5 justify-content-center about">
+          <div className="col-12 text-center mt-5 about">
             <h1 className="aboutturf_title mt-5">What is Smart Turf ?</h1>
           </div>
-          <div className="col-10 text-center mt-3">
+          <div className="col-lg-10 col-md-10 col-sm-11 text-center mt-3">
             <div className="aboutturf_txt">
               <h5 className="aboutturf_text">
                 Our experts inspect your turf and install our unique camera

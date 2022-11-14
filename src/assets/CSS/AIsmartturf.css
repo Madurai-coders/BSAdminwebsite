@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Nunito:wght@600&display=swap");
-
+.smartturf{
+  overflow-x: hidden;
+}
 .covertturf {
   background-color: white;
   border-radius: 42px;
   height: 350px;
-  text-align: center!important;
+  text-align: center !important;
 }
 .covertturf_title {
   padding: 90px 0px;
@@ -26,20 +28,293 @@
   letter-spacing: 0.06em;
   color: #55d26f;
 }
+
 .checkbutton {
   margin-top: 38px;
 }
-.check_btn {
-  border: #55d26f;
+a {
+  border: #55d26f !important;
   background: linear-gradient(90.53deg, #55d26f -5.26%, #8bdd92 103.07%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  padding: 15px 65px;
-  font-size: 20px;
+  padding: 15px 105px !important;
+  font-size: 20px !important;
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
   line-height: 123.68%;
   letter-spacing: 0.06em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transition: 0.5s;
+}
+a:hover::before {
+  left: 100%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .covertturf {
+    height: 326px;
+  }
+  .covertturf_title .title {
+    font-size: 32px;
+  }
+
+  .sub_title {
+    font-size: 45px;
+  }
+
+  .checkbutton {
+    padding-top: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .covertturf {
+    height: 250px;
+  }
+  .covertturf_title {
+    padding: 50px 0px;
+  }
+  .covertturf_title .title {
+    font-size: 25px;
+  }
+
+  .sub_title {
+    font-size: 38px;
+  }
+
+  .checkbutton {
+    padding-top: 19px !important;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .covertturf {
+    height: 250px;
+  }
+  .covertturf_title {
+    padding: 50px 0px;
+  }
+  .covertturf_title .title {
+    font-size: 20px;
+  }
+
+  .sub_title {
+    font-size: 28px;
+  }
+
+  .checkbutton {
+    padding-top: 30px !important;
+  }
+  a {
+    padding: 15px 70px !important;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .covertturf {
+    height: 390px;
+  }
+  .covertturf_title {
+    padding: 20px 60px;
+  }
+  .covertturf_title .title {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 123.18%;
+  }
+  .sub_tit {
+    padding: 0px 70px;
+  }
+  .sub_title {
+    font-size: 36px;
+    line-height: 200%;
+    margin-left: 0px !important;
+    display: flex;
+  }
+
+  a {
+    padding: 12px 70px !important;
+  }
+  .checkbutton {
+    padding-top: 0px !important;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .covertturf_title {
+    padding: 20px 30px;
+  }
+  .sub_tit {
+    padding: 0px 50px;
+  }
+  .covertturf_title .title {
+    font-size: 25px;
+  }
+  a {
+    padding: 12px 60px !important;
+  }
+  .covertturf {
+    border-radius: 16px;
+  }
+  .Scamera {
+    display: none;
+  }
+  .Sturf {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .Sturf {
+    padding: 0px 25px;
+  }
+}
+
+@media only screen and (max-width: 523px) {
+  .covertturf_title {
+    padding: 20px 50px;
+  }
+  .sub_tit {
+    padding: 0px 50px;
+  }
+  .covertturf_title .title {
+    font-size: 21px;
+  }
+  a {
+    padding: 10px 40px !important;
+  }
+  .checkbutton {
+    padding-top: 0px !important;
+  }
+  .covertturf {
+    height: 380px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .covertturf_title {
+    padding: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 428px) {
+  .covertturf {
+    height: 370px;
+  }
+  .covertturf_title {
+    padding: 20px 30px;
+  }
+  .covertturf_title .title {
+    font-size: 19px;
+  }
+  .sub_title {
+    font-size: 30px;
+    line-height: 240%;
+  }
+  .sub_tit {
+    padding: 0px 40px;
+  }
+  .checkbutton {
+    margin-top: 20px !important;
+  }
+  a {
+    padding: 10px 30px !important;
+  }
+}
+
+@media only screen and (max-width: 395px) {
+  .sub_tit {
+    padding: 0px 25px;
+  }
+  .covertturf_title .title {
+    font-size: 18px;
+  }
+  .sub_title {
+    font-size: 29px;
+    line-height: 240%;
+  }
+  .checkbutton {
+    margin-top: 30px !important;
+  }
+  a {
+    padding: 10px 40px !important;
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 357px) {
+  .sub_tit {
+    padding: 0px 40px;
+  }
+  .covertturf_title {
+    padding: 20px 10px;
+  }
+  .covertturf_title .title {
+    font-size: 17px;
+  }
+  .sub_title {
+    font-size: 28px;
+  }
+  .checkbutton{
+    margin-top: 40px!important;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .sub_tit {
+    padding: 0px 30px;
+  }
+  .covertturf_title {
+    padding: 20px 10px;
+  }
+  a {
+    padding: 10px 30px !important;
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .covertturf {
+    height: 330px;
+  }
+  .sub_tit {
+    padding: 0px 30px;
+  }
+  .covertturf_title {
+    padding: 20px 5px;
+  }
+  a {
+    padding: 8px 22px !important;
+    font-size: 15px !important;
+  }
+  .sub_title {
+    font-size: 26px;
+  }
+  .checkbutton {
+    margin-top: 20px !important;
+  }
+  .covertturf_title .title {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 295px) {
+  .sub_tit {
+    padding: 0px 20px;
+  }
+
 }

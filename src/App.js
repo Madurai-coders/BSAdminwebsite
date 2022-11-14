@@ -9,7 +9,7 @@ import ContactForm from './components/ContactForm/contact'
 function App() {
   return (
     <>
-    <div>
+    <div className='bg'>
       <LandingPage></LandingPage>
  <AIsmartturf></AIsmartturf>
  <Advantage></Advantage>

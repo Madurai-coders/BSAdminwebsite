@@ -6,6 +6,7 @@
   height: 100%;
   margin-top: 200px;
   margin-bottom: 200px;
+  overflow-x: hidden;
 }
 .phone {
   color: white;
@@ -38,10 +39,10 @@
 }
 .form {
   width: 70%;
-  height: 660px;
+  height: 600px;
   background-color: #ffffff;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
-  border-radius: 32px;
+  border-radius: 18px;
 }
 .callus {
   margin-top: 110px;
@@ -52,10 +53,10 @@
   font-size: 45px;
   font-weight: bold;
   position: relative;
-  top: 60px;
+  top: 45px;
 }
 .contact_list {
-  margin-top: 120px;
+  margin-top: 90px;
 }
 .contact_list .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
   font-family: "Lexend Deca";
@@ -77,58 +78,112 @@
 .contact_submit:hover {
   background-color: #6cd775;
 }
-/* @media only screen and (max-width: 1000px) {
-  .contact_title {
-    font-size: 30px;
+@media only screen and (max-width: 1350px) {
+  .form {
+    width: 80%;
   }
 }
-@media only screen and (max-width: 861px) {
-  .contact_title {
-    font-size: 27px;
+
+@media only screen and (max-width: 1240px) {
+  .form {
+    width: 85%;
   }
   .contact_submit {
-    font-size: 12px;
-    padding: 3% 25%;
+    padding: 14px 125px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   .form {
     width: 100%;
+    margin-left: 0px !important;
   }
-  .contact_title {
-    font-size: 45px;
-  }
-  .calls {
-    position: relative;
-    bottom: 70px;
+  .contact_submit {
+    padding: 12px 105px;
   }
 }
-@media only screen and (max-width: 575px) {
-  .contactform{
-    margin-top: 150px;
-  }
+
+@media only screen and (max-width: 1000px) {
   .contact_title {
     font-size: 40px;
   }
-  .form {
-    width: 100%;
+}
+@media only screen and (max-width: 992px) {
+  .contact_title {
+    margin-left: 20px !important;
   }
-
-  .callus {
-    padding-top: 0px !important;
+  .contact_tit {
+    margin-left: 0px !important;
   }
-
+  .contact_list {
+    margin-left: 20px !important;
+    padding-left: 0px !important;
+  }
   .contact_submit {
-    padding: 2.5% 30%;
-    font-size: 11px;
+    padding: 10px 110px;
   }
-  .callus svg{
-    height: 50px!important;
+}
+
+@media only screen and (max-width: 800px) {
+  .contact_title {
+    font-size: 40px;
   }
-  .location svg{
-    height: 50px!important;
+  .contact_submit {
+    padding: 10px 85px;
   }
-  .mail svg{
-    height: 50px!important;
+}
+@media only screen and (max-width: 769px) {
+  .contactform {
+    margin-top: 45px;
   }
-} */
+  .form{
+    height: 580px;
+  }
+  .contact_title {
+    margin-left: 20px !important;
+  }
+  .contact_list {
+    margin-left: 20px !important;
+    padding-left: 0px !important;
+    margin-top: 70px;
+  }
+  .contact_submit {
+    padding: 10px 110px;
+  }
+}
+
+
+@media only screen and (max-width: 460px) {
+  .contactform {
+    margin-top: 41px;
+  }
+ 
+  .contact_submit {
+    padding: 10px 90px;
+    font-size: 15px;
+  }
+  .contact_title{
+    font-size: 35px;
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .contact_submit {
+    padding: 10px 30%;
+    font-size: 12px;
+  }
+  .form{
+    height: 560px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .contact_submit {
+    padding: 10px 27%;
+    font-size: 12px;
+  }
+  .contact_title{
+    font-size: 29px;
+  }
+  
+}

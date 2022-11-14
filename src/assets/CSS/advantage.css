@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Nunito:wght@700&display=swap");
-
+.advantageofenturf {
+  padding: 0px 10px;
+  overflow-x: hidden;
+}
 .advantage_title {
   font-family: "Nunito";
   font-style: normal;
@@ -60,4 +63,203 @@
   line-height: 51px;
   letter-spacing: 0.06em;
   color: #4a2f2f;
+}
+@media only screen and (max-width: 1474px) {
+  .advantage_2 {
+    width: 87%;
+  }
+  .advantage_3 {
+    width: 95%;
+  }
+  .advantage_4 {
+    width: 89%;
+  }
+  .advantage_5 {
+    width: 73%;
+  }
+}
+@media only screen and (max-width: 1340px) {
+  .advantage_txt {
+    font-size: 22px;
+  }
+  .advantage_1 {
+    margin-top: 50px;
+  }
+  .advantage_3 {
+    margin-top: 110px;
+  }
+  .advantage_5 {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 1216px) {
+  .advantage_txt {
+    font-size: 20px;
+  }
+  .advantage_1 {
+    width: 60%;
+  }
+  .advantage_2 {
+    width: 91%;
+  }
+  .advantage_3 {
+    width: 99%;
+  }
+  .advantage_4 {
+    width: 92%;
+    margin-left: 15px !important;
+  }
+  .advantage_5 {
+    width: 77%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .advantage_txt {
+    font-size: 18px;
+  }
+  .advantage_2 {
+    margin-top: 190px;
+  }
+  .advantage_1 {
+    margin-top: 30px;
+  }
+  .advantage_5 {
+    margin-top: 20px;
+  }
+  .advantage_title{
+       font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 977px) {
+  .advantage_txt {
+    font-size: 16px;
+  }
+  .advantage_2 {
+    margin-top: 160px;
+  }
+  .advantage_4 {
+    margin-top: 150px;
+  }
+  .advantage_5 {
+    margin-top: 0px;
+  }
+  .advantage_title{
+       font-size: 45px;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .advantage_txt {
+    font-size: 14px;
+  }
+  .advantage_1 {
+    margin-left: 70px;
+    width: 63%;
+  }
+
+  .advantage_2 {
+    width: 94%;
+  }
+  .advantage_3 {
+    width: 101%;
+  }
+  .advantage_4 {
+    width: 95%;
+  }
+  .advantage_5 {
+    width: 79%;
+  }
+  .advantage_title{
+       font-size:40px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .advantage_title{
+    font-size:50px;
+}
+  .advantage_txt {
+    font-size: 25px;
+  }
+  .advantage_1 {
+    margin-left: 0px;
+    width: 100%;
+    border-radius: 13px;
+  }
+
+  .advantage_2 {
+    width: 100%;
+    margin-top: 0px!important;
+    margin-left: 0px;
+    border-radius: 13px;
+
+  }
+  .advantage_3 {
+    width: 100%;
+    margin-top: 0px!important;
+    border-radius: 13px;
+
+  }
+  .advantage_4 {
+    width: 100%;
+    margin-top: 0px!important;
+    margin-left: 0px!important;
+    border-radius: 13px;
+
+  }
+  .advantage_5 {
+    width: 100%;
+    margin-top: 0px!important;
+    border-radius: 13px;
+
+  }
+  
+}
+
+@media only screen and (max-width: 650px) {
+  .advantage_title{
+    font-size:45px;
+}
+  .advantage_txt {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .advantage_title{
+    font-size:38px;
+}
+  .advantage_txt {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .advantage_title{
+    font-size:34px;
+}
+  .advantage_txt {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .advantage_title{
+    font-size:29px;
+}
+  .advantage_txt {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .advantage_title{
+    font-size:23px;
+}
+  .advantage_txt {
+    font-size: 12px;
+  }
 }
