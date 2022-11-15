@@ -242,7 +242,7 @@ function Contact() {
                   </div>
                 </div>
               </div>
-              <div className="calls col-11 text-center mt-5">
+              <div className="calls col-12 text-center">
                 <div className="d-flex flex-column">
                   <div className="callus">
                     <PhoneIcon

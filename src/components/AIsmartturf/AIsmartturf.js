@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import "../../assets/CSS/AIsmartturf.css";
 import Camera from "../../assets/images/camera.svg";
+
+
 function AIsmartturf() {
+  
   return (
     <>
       <div className="smartturf">
@@ -13,17 +16,22 @@ function AIsmartturf() {
             <div className="covertturf mt-5 ms-1">
               <div className="covertturf_title">
                 <h1 className="title">
-                Covert your turf into AI powered smart turf in</h1>
-                <div className="sub_tit mt-4 pt-2">
-                   <span className="sub_title">0 Investment</span>
+                  Covert your turf into AI powered smart turf in
+                </h1>
+                <div
+                  className="sub_tit mt-4 pt-2"
+                
+                >
+                  <span className="sub_title" 
+                >0 Investment</span>
                   <span className="sub_title ms-5">0 Efforts</span>
                   <span className="sub_title ms-5">0 Maintanence</span>
-                
-
                 </div>
                 <div className="checkbutton pt-5">
-                <a className="check_btn btn btn-success">Check Eligibility Today</a>
-              </div>
+                  <a className="check_btn btn btn-success">
+                    Check Eligibility Today
+                  </a>
+                </div>
               </div>
             </div>
           </div>

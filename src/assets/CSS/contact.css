@@ -5,7 +5,7 @@
 .contactform {
   height: 100%;
   margin-top: 200px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -15,21 +15,21 @@
 
 .call {
   font-size: 25px;
-  font-family: "Montserrat";
-  font-weight: 600;
+  font-family:"Lexend Deca" ;
+  font-weight: 500;
   color: white;
 }
 .no {
   color: white;
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "Lexend Deca";
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   margin-top: 3px;
 }
 .place {
-  font-family: "Montserrat";
+  font-family: "Lexend Deca";
   margin-top: 3px;
-  font-weight: 100;
+  font-weight: 500;
   font-size: 15px;
   color: white;
 }
@@ -149,6 +149,12 @@
   }
   .contact_submit {
     padding: 10px 110px;
+  }
+  .callus{
+    margin-top: 60px;
+  }
+  .contactform{
+    margin-bottom: 50px;
   }
 }
 
