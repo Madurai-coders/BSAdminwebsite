@@ -4,8 +4,21 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import AutoTyping, { BlinkCursor } from "react-auto-typing";
 import Landingpage_img from "../../assets/images/landingpage.svg";
+import lottie from "lottie-web";
+import { useEffect, useRef } from "react";
+
 function Landingpage() {
- 
+  const Landingpage = useRef(null);
+
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: Landingpage.current,
+      autoplay: true,
+      loop: true,
+      animationData: require("../EnturfAnimation/landingpage.json"),
+    });
+  }, []);
+
   return (
     <>
       <div className="landingpage">
@@ -71,7 +84,11 @@ function Landingpage() {
             </div>
           </div>
           <div className="col-lg-5 col-md-5 col-sm-12 text-center">
-            <img src={Landingpage_img} className="landingpage_img img-fluid" alt="landing"></img>
+          <div
+                  className="Enturfadminwebsite_advantage"
+                  id="lottie"
+                  ref={Landingpage}
+                ></div>
           </div>
         </div>
       </div>

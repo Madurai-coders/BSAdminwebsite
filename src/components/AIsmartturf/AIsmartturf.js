@@ -12,8 +12,8 @@ function AIsmartturf() {
           <div className="col-1">
             <img src={Camera} className="Scamera" alt="cam"></img>
           </div>
-          <div className="col-lg-10 col-md-10 col-sm-10 mt-5 pt-5 text-center Sturf">
-            <div className="covertturf mt-5 ms-1">
+          <div className="col-lg-10 col-md-10 col-sm-10 pt-5 mt-5 text-center Sturf">
+            <div className="covertturf mt-5">
               <div className="covertturf_title">
                 <h1 className="title">
                   Covert your turf into AI powered smart turf in
@@ -28,7 +28,7 @@ function AIsmartturf() {
                   <span className="sub_title ms-5">0 Maintanence</span>
                 </div>
                 <div className="checkbutton pt-5">
-                  <a className="check_btn btn btn-success">
+                  <a href="#contact" className="check_btn btn btn-success">
                     Check Eligibility Today
                   </a>
                 </div>

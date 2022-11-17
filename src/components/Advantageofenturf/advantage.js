@@ -3,13 +3,28 @@ import React, { Component } from "react";
 import Advantage_img from "../../assets/images/advantage.svg";
 import { useMediaQuery } from "react-responsive";
 import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import lottie from "lottie-web";
+import { TextField } from "@mui/material";
+import script from '../script/script';
+
 function Advantage() {
   useEffect(() => {
     AOS.init();
   }, []);
   const Mobile = useMediaQuery({ maxWidth: 768 });
   const Tab = useMediaQuery({ minWidth: 769 });
+  const advantage = useRef(null);
+  useEffect(() => {
+    lottie.loadAnimation({
+      container: advantage.current,
+      autoplay: true,
+      loop: true,
+      animationData: require("../EnturfAnimation/advantage.json"),
+    });
+  }, []);
+
+ 
   return (
     <>
       <div className="advantageofenturf mt-5 pt-5">
@@ -29,8 +44,12 @@ function Advantage() {
                   </h5>
                 </div>
               </div>
-              <div className="col-4 mt-5 text-center">
-                <img src={Advantage_img} className="img-fluid" alt="ad"></img>
+              <div className="col-4 text-center ad">
+                <div
+                  className="Enturfadminwebsite_advantage"
+                  id="lottie"
+                  ref={advantage}
+                ></div>
               </div>
               <div className="col-4 text-center">
                 <div className="advantage_3" data-aos="zoom-in-left">
@@ -53,10 +72,14 @@ function Advantage() {
           {Mobile && (
             <>
               <div className="col-12 mt-5 text-center">
-                <img src={Advantage_img} className="img-fluid" alt="ad"></img>
+                <div
+                  className="Enturfadminwebsite_advantage"
+                  id="lottie"
+                  ref={advantage}
+                ></div>
               </div>
 
-              <div className="col-10 text-center mt-5 pt-2">
+              <div className="col-10 text-center">
                 <div className="advantage_1">
                   <h5 className="advantage_txt">Increased revenue</h5>
                 </div>
@@ -72,8 +95,8 @@ function Advantage() {
                 <div className="advantage_3">
                   <h5 className="advantage_txt">Booking and User management</h5>
                 </div>
-                </div>
-                <div className="col-10 text-center mt-3">
+              </div>
+              <div className="col-10 text-center mt-3">
                 <div className="advantage_4">
                   <h5 className="advantage_txt">
                     Access to millions of customer

@@ -62,6 +62,9 @@ a::before {
 a:hover::before {
   left: 100%;
 }
+.Scamera{
+  height: 30%;
+}
 
 @media only screen and (max-width: 1250px) {
   .covertturf {
@@ -97,6 +100,12 @@ a:hover::before {
 
   .checkbutton {
     padding-top: 19px !important;
+  }
+  .Scamera{
+    height: 25%;
+  }
+  .Sturf {
+    margin-top: 0px !important;
   }
 }
 @media only screen and (max-width: 990px) {
@@ -150,6 +159,9 @@ a:hover::before {
   .checkbutton {
     padding-top: 0px !important;
     margin-top: 25px;
+  }
+  .Scamera{
+    height: 20%;
   }
 }
 
