@@ -84,11 +84,13 @@ function Landingpage() {
             </div>
           </div>
           <div className="col-lg-5 col-md-5 col-sm-12 text-center">
+            <div className="landingpage_img">
           <div
-                  className="Enturfadminwebsite_advantage"
+                  className="Enturfadminwebsite_landingpage"
                   id="lottie"
                   ref={Landingpage}
                 ></div>
+                </div>
           </div>
         </div>
       </div>

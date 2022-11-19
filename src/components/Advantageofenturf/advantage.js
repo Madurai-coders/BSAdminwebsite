@@ -18,8 +18,8 @@ function Advantage() {
   useEffect(() => {
     lottie.loadAnimation({
       container: advantage.current,
-      autoplay: true,
-      loop: true,
+    
+        renderer:'svg',
       animationData: require("../EnturfAnimation/advantage.json"),
     });
   }, []);
@@ -48,6 +48,7 @@ function Advantage() {
                 <div
                   className="Enturfadminwebsite_advantage"
                   id="lottie"
+                
                   ref={advantage}
                 ></div>
               </div>
@@ -61,17 +62,13 @@ function Advantage() {
                   </h5>
                 </div>
               </div>
-              <div className="col-4 text-center mt-5">
-                <div className="advantage_5" data-aos="zoom-in-up">
-                  <h5 className="advantage_txt">Hassle free registration</h5>
-                </div>
-              </div>
+             
             </>
           )}
 
           {Mobile && (
             <>
-              <div className="col-12 mt-5 text-center">
+              <div className="col-12 text-center">
                 <div
                   className="Enturfadminwebsite_advantage"
                   id="lottie"
@@ -103,11 +100,7 @@ function Advantage() {
                   </h5>
                 </div>
               </div>
-              <div className="col-10 text-center mt-3">
-                <div className="advantage_5">
-                  <h5 className="advantage_txt">Hassle free registration</h5>
-                </div>
-              </div>
+              
             </>
           )}
         </div>

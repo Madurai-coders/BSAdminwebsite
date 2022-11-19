@@ -1,9 +1,12 @@
-import React, { Component } from "react";
+import React, { Component,useState } from "react";
 import "../../assets/CSS/AIsmartturf.css";
 import Camera from "../../assets/images/camera.svg";
 
 
 function AIsmartturf() {
+
+
+
   
   return (
     <>
@@ -28,7 +31,7 @@ function AIsmartturf() {
                   <span className="sub_title ms-5">0 Maintanence</span>
                 </div>
                 <div className="checkbutton pt-5">
-                  <a href="#contact" className="check_btn btn btn-success">
+                  <a href="#contact" className="check_btn btn btn-success" >
                     Check Eligibility Today
                   </a>
                 </div>

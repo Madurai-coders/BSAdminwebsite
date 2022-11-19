@@ -7,6 +7,8 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import ContactCamera from "../../assets/images/camera.svg";
 import AOS from "aos";
+import VisibilitySensor from "react-visibility-sensor";
+
 function Contact() {
   const [contactform, setcontactform] = useState({
     Name: "",
@@ -21,10 +23,8 @@ function Contact() {
   }, []);
   const Mobile = useMediaQuery({ maxWidth: 768 });
   const Tab = useMediaQuery({ minWidth: 769 });
-  
 
 
-  
   return (
     <>
       <div className="contactform" id="contact">
@@ -32,7 +32,11 @@ function Contact() {
           <>
             <div className="row">
               <div className="col-1">
-                <img src={ContactCamera} className="Ccamera" alt="contact"></img>
+                <img
+                  src={ContactCamera}
+                  className="Ccamera"
+                  alt="contact"
+                ></img>
               </div>
             </div>
             <div className="row mt-4">
@@ -83,8 +87,8 @@ function Contact() {
                       id="NAME"
                       label="Name"
                       variant="standard"
+                    />
                     
-                     />
                     <TextField
                       value={contactform.Email}
                       onChange={(e) =>
