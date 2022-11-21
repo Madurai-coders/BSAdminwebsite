@@ -51,7 +51,7 @@ function Landingpage() {
                 </p>
               </div>
 
-              <div className="d-flex flex-row mt-5 turf_user">
+              <div className="d-flex flex-row mt-4 turf_user">
                 <div className="col-lg-5 col-md-5 col-sm-6 col-7 d-flex flex-column mt-4 USERS">
                   <h6 className="turf_title">MORE THAN</h6>
                   <h1 className="turf_no">
@@ -84,7 +84,7 @@ function Landingpage() {
             </div>
           </div>
           <div className="col-lg-5 col-md-5 col-sm-12 text-center">
-            <div className="landingpage_img">
+            <div className="landingpage_img me-5">
           <div
                   className="Enturfadminwebsite_landingpage"
                   id="lottie"

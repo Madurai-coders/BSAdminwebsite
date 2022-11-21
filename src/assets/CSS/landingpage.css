@@ -81,7 +81,7 @@
 /* landingpage_image */
 .landingpage_img {
   position: relative;
-  bottom: 35px;
+  bottom: 90px;
 }
 .Enturfadminwebsite_landingpage {
   height: 100vh;
@@ -93,6 +93,12 @@
   }
   .landingpage_dsrptn {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 1242px) {
+  .landingpage_img {
+    position: relative;
+    bottom: 0px;
   }
 }
 

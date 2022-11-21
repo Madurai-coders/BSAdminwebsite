@@ -109,7 +109,7 @@ function Contact() {
               >
                 <div className="form ms-5" data-aos="zoom-in">
                   <div className="contact_tit ms-5">
-                    <h2 className="contact_title ms-4">Contact Now</h2>
+                    <h2 className="contact_title ms-1">Contact Now</h2>
                   </div>
                   {validation_Name(contactform.Name).msg}
                   {validation_Email(contactform.Email).msg}
@@ -117,7 +117,7 @@ function Contact() {
                   {validation_Sports(contactform.SportsAvenue).msg}
                   {validation_Name(contactform.City).msg}
 
-                  <div className="contact_list ms-5 me-5 ps-4">
+                  <div className="contact_list ms-4 me-5 ps-4">
                     <TextField
                       value={
                         contactform.Name != "not_selected"
