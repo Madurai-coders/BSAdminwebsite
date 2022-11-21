@@ -83,7 +83,7 @@
   position: relative;
   bottom: 35px;
 }
-.Enturfadminwebsite_landingpage{
+.Enturfadminwebsite_landingpage {
   height: 100vh;
   overflow-y: hidden;
 }
@@ -112,10 +112,9 @@
   .USERS {
     margin-top: 0px !important;
   }
-  .Enturfadminwebsite_landingpage{
+  .Enturfadminwebsite_landingpage {
     height: 80vh;
   }
- 
 }
 
 @media only screen and (max-width: 1000px) {
@@ -155,7 +154,7 @@
     position: relative;
     right: 15px;
   }
-  .Enturfadminwebsite_landingpage{
+  .Enturfadminwebsite_landingpage {
     height: 70vh;
   }
   .landingpage_img {
@@ -198,7 +197,7 @@
     position: relative;
     right: 20px;
   }
-  .Enturfadminwebsite_landingpage{
+  .Enturfadminwebsite_landingpage {
     height: 70vh;
   }
   .landingpage_img {
@@ -275,11 +274,10 @@
     margin-top: 5px !important;
   }
   .landingpage_img {
- 
     margin-top: 30px;
   }
-  .Enturfadminwebsite_landingpage{
-    height: 60vh;
+  .Enturfadminwebsite_landingpage {
+    height: 56vh;
   }
 }
 
@@ -317,11 +315,10 @@
     margin-left: -50px !important;
   }
   .landingpage_img {
- 
     margin-top: 0px;
   }
-  .Enturfadminwebsite_landingpage{
-    height: 55vh;
+  .Enturfadminwebsite_landingpage {
+    height: 50vh;
   }
 }
 

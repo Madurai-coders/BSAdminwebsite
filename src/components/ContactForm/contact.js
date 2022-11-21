@@ -1,21 +1,28 @@
 import "../../assets/CSS/contact.css";
+import React, { Component } from "react";
+
 import PhoneIcon from "@mui/icons-material/Phone";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import LanguageIcon from "@mui/icons-material/Language";
 import TextField from "@mui/material/TextField";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import ContactCamera from "../../assets/images/camera.svg";
 import AOS from "aos";
 import VisibilitySensor from "react-visibility-sensor";
-
+import {
+  validation_Email,
+  validation_Name,
+  validation_Phoneno,
+  validation_Sports,
+} from "../validation/validatefunction";
 function Contact() {
   const [contactform, setcontactform] = useState({
-    Name: "",
-    Email: "",
-    PhoneNo: "",
-    SportsAvenue: "",
-    City: "",
+    Name: "not_selected",
+    Email: "not_selected",
+    PhoneNo: "not_selected",
+    SportsAvenue: "not_selected",
+    City: "not_selected",
   });
 
   useEffect(() => {
@@ -23,7 +30,34 @@ function Contact() {
   }, []);
   const Mobile = useMediaQuery({ maxWidth: 768 });
   const Tab = useMediaQuery({ minWidth: 769 });
+  const [validatedata, setvalidatedata] = useState([]);
 
+  const [className, setclassName] = useState("contactinput");
+
+  function Form_submit() {
+    if (
+      validation_Name(contactform.Name).class === "pass" &&
+      validation_Email(contactform.Email).class === "pass" &&
+      validation_Phoneno(contactform.PhoneNo).class === "pass" &&
+      validation_Sports(contactform.SportsAvenue).class === "pass" &&
+      validation_Name(contactform.City).class === "pass"
+    ) {
+      let array = validatedata;
+      array.push({ ...contactform });
+      console.log("contactform:", array);
+      setvalidatedata([...array]);
+
+      setcontactform({
+        Name: "not_selected",
+        Email: "not_selected",
+        PhoneNo: "not_selected",
+        SportsAvenue: "not_selected",
+        City: "not_selected",
+      });
+    } else {
+      setclassName("contactinput_error");
+    }
+  }
 
   return (
     <>
@@ -77,9 +111,23 @@ function Contact() {
                   <div className="contact_tit ms-5">
                     <h2 className="contact_title ms-4">Contact Now</h2>
                   </div>
+                  {validation_Name(contactform.Name).msg}
+                  {validation_Email(contactform.Email).msg}
+                  {validation_Phoneno(contactform.PhoneNo).msg}
+                  {validation_Sports(contactform.SportsAvenue).msg}
+                  {validation_Name(contactform.City).msg}
+
                   <div className="contact_list ms-5 me-5 ps-4">
                     <TextField
-                      value={contactform.Name}
+                      value={
+                        contactform.Name != "not_selected"
+                          ? contactform.Name
+                          : ""
+                      }
+                      onKeyUp={validation_Name}
+                      onBlur={(e) =>
+                        setcontactform({ ...contactform, Name: e.target.value })
+                      }
                       onChange={(e) =>
                         setcontactform({ ...contactform, Name: e.target.value })
                       }
@@ -87,69 +135,120 @@ function Contact() {
                       id="NAME"
                       label="Name"
                       variant="standard"
+                      className={className}
+                      variant="standard"
                     />
-                    
+
                     <TextField
-                      value={contactform.Email}
+                      value={
+                        contactform.Email != "not_selected"
+                          ? contactform.Email
+                          : ""
+                      }
+                      onKeyUp={validation_Email}
+                      onBlur={(e) =>
+                        setcontactform({
+                          ...contactform,
+                          Email: e.target.value,
+                        })
+                      }
                       onChange={(e) =>
                         setcontactform({
                           ...contactform,
                           Email: e.target.value,
                         })
                       }
-                      sx={{ marginTop: 3 }}
+                      sx={{ marginTop: 2 }}
                       fullWidth
                       id="standard-basic"
                       label="Email"
                       variant="standard"
-                      className="mt-4"
+                      className={className}
                     />
                     <TextField
-                      value={contactform.Phone}
+                      value={
+                        contactform.PhoneNo != "not_selected"
+                          ? contactform.PhoneNo
+                          : ""
+                      }
+                      onKeyUp={validation_Phoneno}
+                      onBlur={(e) =>
+                        setcontactform({
+                          ...contactform,
+                          PhoneNo: e.target.value,
+                        })
+                      }
                       onChange={(e) =>
                         setcontactform({
                           ...contactform,
-                          Phone: e.target.value,
+                          PhoneNo: e.target.value,
                         })
                       }
-                      sx={{ marginTop: 3 }}
+                      sx={{ marginTop: 2 }}
                       fullWidth
                       id="standard-basic"
                       label="Phone"
                       variant="standard"
-                      className="mt-4"
+                      className={className}
                     />
                     <TextField
-                      value={contactform.SportsAvenue}
+                      value={
+                        contactform.SportsAvenue != "not_selected"
+                          ? contactform.SportsAvenue
+                          : ""
+                      }
+                      onKeyUp={validation_Sports}
+                      onBlur={(e) =>
+                        setcontactform({
+                          ...contactform,
+                          SportsAvenue: e.target.value,
+                        })
+                      }
                       onChange={(e) =>
                         setcontactform({
                           ...contactform,
                           SportsAvenue: e.target.value,
                         })
                       }
-                      sx={{ marginTop: 3 }}
+                      sx={{ marginTop: 2 }}
                       fullWidth
                       id="standard-basic"
                       label="Sports Avenue"
                       variant="standard"
-                      className="mt-4"
+                      className={className}
                     />
                     <TextField
-                      value={contactform.City}
-                      onChange={(e) =>
-                        setcontactform({ ...contactform, City: e.target.value })
+                      value={
+                        contactform.City != "not_selected"
+                          ? contactform.City
+                          : ""
                       }
+                      onKeyUp={validation_Name}
+                      onBlur={(e) =>
+                        setcontactform({
+                          ...contactform,
+                          City: e.target.value,
+                        })
+                      }
+                      onChange={(e) =>
+                        setcontactform({
+                          ...contactform,
+                          City: e.target.value,
+                        })
+                      }
+                      sx={{ marginTop: 2 }}
                       fullWidth
                       id="standard-basic"
                       label="City"
                       variant="standard"
-                      className="mt-3 pt-1"
+                      className={className}
                     />
                     <div className="row justify-content-center">
                       <div className="col-12 text-center">
                         <button
                           type="button"
                           className="contact_submit btn btn-success mt-5"
+                          onClick={Form_submit}
                         >
                           Submit Form
                         </button>
@@ -168,11 +267,24 @@ function Contact() {
               <div className="col-11" data-aos="zoom-in">
                 <div className="form ms-5" data-aos="zoom-in">
                   <div className="contact_tit ms-5">
-                    <h2 className="contact_title ms-4">Contact Now</h2>
+                    <h2 className="contact_title ms-5 ps-2">Contact Now</h2>
                   </div>
-                  <div className="contact_list ms-5 me-5 ps-4">
+                  {validation_Name(contactform.Name).msg}
+                  {validation_Email(contactform.Email).msg}
+                  {validation_Phoneno(contactform.PhoneNo).msg}
+                  {validation_Sports(contactform.SportsAvenue).msg}
+                  {validation_Name(contactform.City).msg}
+                  <div className="contact_list me-5">
                     <TextField
-                      value={contactform.Name}
+                      value={
+                        contactform.Name != "not_selected"
+                          ? contactform.Name
+                          : ""
+                      }
+                      onKeyUp={validation_Name}
+                      onBlur={(e) =>
+                        setcontactform({ ...contactform, Name: e.target.value })
+                      }
                       onChange={(e) =>
                         setcontactform({ ...contactform, Name: e.target.value })
                       }
@@ -182,7 +294,18 @@ function Contact() {
                       variant="standard"
                     />
                     <TextField
-                      value={contactform.Email}
+                      value={
+                        contactform.Email != "not_selected"
+                          ? contactform.Email
+                          : ""
+                      }
+                      onKeyUp={validation_Email}
+                      onBlur={(e) =>
+                        setcontactform({
+                          ...contactform,
+                          Email: e.target.value,
+                        })
+                      }
                       onChange={(e) =>
                         setcontactform({
                           ...contactform,
@@ -197,11 +320,22 @@ function Contact() {
                       className="mt-4"
                     />
                     <TextField
-                      value={contactform.Phone}
+                      value={
+                        contactform.PhoneNo != "not_selected"
+                          ? contactform.PhoneNo
+                          : ""
+                      }
+                      onKeyUp={validation_Phoneno}
+                      onBlur={(e) =>
+                        setcontactform({
+                          ...contactform,
+                          PhoneNo: e.target.value,
+                        })
+                      }
                       onChange={(e) =>
                         setcontactform({
                           ...contactform,
-                          Phone: e.target.value,
+                          PhoneNo: e.target.value,
                         })
                       }
                       sx={{ marginTop: 3 }}
@@ -212,7 +346,18 @@ function Contact() {
                       className="mt-4"
                     />
                     <TextField
-                      value={contactform.SportsAvenue}
+                      value={
+                        contactform.SportsAvenue != "not_selected"
+                          ? contactform.SportsAvenue
+                          : ""
+                      }
+                      onKeyUp={validation_Sports}
+                      onBlur={(e) =>
+                        setcontactform({
+                          ...contactform,
+                          SportsAvenue: e.target.value,
+                        })
+                      }
                       onChange={(e) =>
                         setcontactform({
                           ...contactform,
@@ -227,9 +372,23 @@ function Contact() {
                       className="mt-4"
                     />
                     <TextField
-                      value={contactform.City}
+                      value={
+                        contactform.City != "not_selected"
+                          ? contactform.City
+                          : ""
+                      }
+                      onKeyUp={validation_Name}
+                      onBlur={(e) =>
+                        setcontactform({
+                          ...contactform,
+                          City: e.target.value,
+                        })
+                      }
                       onChange={(e) =>
-                        setcontactform({ ...contactform, City: e.target.value })
+                        setcontactform({
+                          ...contactform,
+                          City: e.target.value,
+                        })
                       }
                       fullWidth
                       id="standard-basic"
@@ -238,10 +397,11 @@ function Contact() {
                       className="mt-3 pt-1"
                     />
                     <div className="row justify-content-center">
-                      <div className="col-12 text-center">
+                      <div className="col-12 text-center mt-3">
                         <button
                           type="button"
                           className="contact_submit btn btn-success mt-5"
+                          onClick={Form_submit}
                         >
                           Submit Form
                         </button>

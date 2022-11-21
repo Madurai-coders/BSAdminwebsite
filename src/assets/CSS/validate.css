@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap");
+
+.danger_img {
+  width: 24px;
+  height: 24px;
+}
+.warning_txt {
+  font-size: 16px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 300;
+  position: relative;
+  top: 1px;
+}
+small {
+  position: absolute;
+  top: 105px;
+  left: 70px;
+}
+@media only screen and (max-width: 993px) {
+  small {
+    position: absolute;
+    top: 95px;
+    left: 25px;
+  }
+}

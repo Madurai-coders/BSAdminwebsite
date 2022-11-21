@@ -15,7 +15,7 @@
 
 .call {
   font-size: 25px;
-  font-family:"Lexend Deca" ;
+  font-family: "Lexend Deca";
   font-weight: 500;
   color: white;
 }
@@ -59,13 +59,22 @@
 .contact_list {
   margin-top: 90px;
 }
-.contact_list .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
-  font-family: "Lexend Deca";
-  color: #828282;
-}
-.contact_list .css-1x51dt5-MuiInputBase-input-MuiInput-input {
+.contactinput {
   border-bottom: 0.1px solid rgb(255, 255, 255) !important;
 }
+.contactinput:hover {
+  border-bottom: 0.1px solid rgb(255, 255, 255) !important;
+}
+.contactinput label {
+  font-size: 16px !important;
+  color: #828282;
+  font-weight: 400;
+  font-family: "Lexend Deca";
+}
+.contactinput_error {
+  border-bottom: 3px solid rgb(216, 8, 39) !important;
+}
+
 .contact_submit {
   background-color: #5fd068;
   border: none;
@@ -104,7 +113,7 @@
   }
 }
 @media only screen and (max-width: 1140px) {
-  .Ccamera{
+  .Ccamera {
     height: 60%;
   }
 }
@@ -141,61 +150,58 @@
   .contactform {
     margin-top: 45px;
   }
-  .form{
-    height: 580px;
+  .form {
+    height: 620px;
   }
   .contact_title {
     margin-left: 20px !important;
   }
   .contact_list {
-    margin-left: 20px !important;
+    margin-left: 25px !important;
     padding-left: 0px !important;
-    margin-top: 70px;
   }
   .contact_submit {
-    padding: 10px 110px;
+    padding: 2% 35%;
   }
-  .callus{
+  .callus {
     margin-top: 60px;
   }
-  .contactform{
+  .contactform {
     margin-bottom: 50px;
   }
 }
-
 
 @media only screen and (max-width: 460px) {
   .contactform {
     margin-top: 41px;
   }
- 
+
   .contact_submit {
-    padding: 10px 90px;
+    padding: 2% 30%;
+
     font-size: 15px;
   }
-  .contact_title{
+  .form {
+    height: 600px;
+  }
+  .contact_title {
     font-size: 35px;
   }
 }
 
-
 @media only screen and (max-width: 375px) {
   .contact_submit {
-    padding: 10px 30%;
+    padding: 10px 27%;
     font-size: 12px;
+    margin-top: 25px !important;
   }
-  .form{
-    height: 560px;
+  .form {
+    height: 570px;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  .contact_submit {
-    padding: 10px 27%;
-    font-size: 12px;
-  }
-  .contact_title{
+  .contact_title {
     font-size: 29px;
   }
-  
 }
