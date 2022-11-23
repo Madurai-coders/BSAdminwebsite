@@ -9,13 +9,7 @@ import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import ContactCamera from "../../assets/images/camera.svg";
 import AOS from "aos";
-import VisibilitySensor from "react-visibility-sensor";
-import {
-  validation_Email,
-  validation_Name,
-  validation_Phoneno,
-  validation_Sports,
-} from "../validation/validatefunction";
+
 function Contact() {
   const [contactform, setcontactform] = useState({
     Name: "not_selected",
@@ -33,20 +27,27 @@ function Contact() {
   const [validatedata, setvalidatedata] = useState([]);
 
   const [className, setclassName] = useState("contactinput");
+  const [warning, setwarning] = useState(false);
+  const [success, setsuccess] = useState(false);
 
   function Form_submit() {
+    var email = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{3,4})+$/;
+    var No = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
     if (
-      validation_Name(contactform.Name).class === "pass" &&
-      validation_Email(contactform.Email).class === "pass" &&
-      validation_Phoneno(contactform.PhoneNo).class === "pass" &&
-      validation_Sports(contactform.SportsAvenue).class === "pass" &&
-      validation_Name(contactform.City).class === "pass"
+      contactform.Name &&
+      email.test(contactform.Email) &&
+      No.test(contactform.PhoneNo) &&
+      contactform.SportsAvenue.length < 10 &&
+      contactform.City
     ) {
       let array = validatedata;
       array.push({ ...contactform });
       console.log("contactform:", array);
       setvalidatedata([...array]);
-
+      setsuccess(true);
+      setTimeout(function() {
+        setsuccess(false);
+      }, 2000);
       setcontactform({
         Name: "not_selected",
         Email: "not_selected",
@@ -54,6 +55,14 @@ function Contact() {
         SportsAvenue: "not_selected",
         City: "not_selected",
       });
+    } else if (!email.test(contactform.Email)) {
+      setwarning(true);
+    }
+    if (!No.test(contactform.PhoneNo)) {
+      setwarning(true);
+    }
+    if (contactform.SportsAvenue.length > 10) {
+      setwarning(true);
     }
   }
 
@@ -109,47 +118,14 @@ function Contact() {
                   <div className="contact_tit ms-5">
                     <h2 className="contact_title ms-1">Contact Now</h2>
                   </div>
-                  {validation_Name(contactform.Name).msg}
-                  {validation_Email(contactform.Email).msg}
-                  {validation_Phoneno(contactform.PhoneNo).msg}
-                  {validation_Sports(contactform.SportsAvenue).msg}
-                  {validation_Name(contactform.City).msg}
 
                   <div className="contact_list ms-4 me-5 ps-4">
-                    {/* <div class="fieldOuter">
-                      <input
-                        value={
-                          contactform.Name != "not_selected"
-                            ? contactform.Name
-                            : ""
-                        }
-                        onKeyUp={validation_Name}
-                        onBlur={(e) =>
-                          setcontactform({
-                            ...contactform,
-                            Name: e.target.value,
-                          })
-                        }
-                        onChange={(e) =>
-                          setcontactform({
-                            ...contactform,
-                            Name: e.target.value,
-                          })
-                        }
-                        type="text"
-                        placeholder="Name"
-                        className={className}
-                        style={{ marginTop: 7 }}
-                      />
-                      <label for="LastName">Name</label>
-                    </div> */}
                     <TextField
                       value={
                         contactform.Name != "not_selected"
                           ? contactform.Name
                           : ""
                       }
-                      onKeyUp={validation_Name}
                       onBlur={(e) =>
                         setcontactform({
                           ...contactform,
@@ -176,7 +152,6 @@ function Contact() {
                           ? contactform.Email
                           : ""
                       }
-                      onKeyUp={validation_Email}
                       onBlur={(e) =>
                         setcontactform({
                           ...contactform,
@@ -203,7 +178,6 @@ function Contact() {
                           ? contactform.PhoneNo
                           : ""
                       }
-                      onKeyUp={validation_Phoneno}
                       onBlur={(e) =>
                         setcontactform({
                           ...contactform,
@@ -230,7 +204,6 @@ function Contact() {
                           ? contactform.SportsAvenue
                           : ""
                       }
-                      onKeyUp={validation_Sports}
                       onBlur={(e) =>
                         setcontactform({
                           ...contactform,
@@ -257,7 +230,6 @@ function Contact() {
                           ? contactform.City
                           : ""
                       }
-                      onKeyUp={validation_Name}
                       onBlur={(e) =>
                         setcontactform({
                           ...contactform,
@@ -288,6 +260,23 @@ function Contact() {
                           Submit Form
                         </button>
                       </div>
+                      <div className="col-9 text-center mt-3 ms-4">
+                        {warning && (
+                          <>
+                            <h6 className="text-danger warning">
+                              some fields are incorrect.please check nad try
+                              again.
+                            </h6>
+                          </>
+                        )}
+                        {success && (
+                          <>
+                            <h6 className="text-success warning ms-5">
+                              Your Message Successfully Sent !
+                            </h6>
+                          </>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -304,11 +293,7 @@ function Contact() {
                   <div className="contact_tit ms-5">
                     <h2 className="contact_title ms-5 ps-2">Contact Now</h2>
                   </div>
-                  {validation_Name(contactform.Name).msg}
-                  {validation_Email(contactform.Email).msg}
-                  {validation_Phoneno(contactform.PhoneNo).msg}
-                  {validation_Sports(contactform.SportsAvenue).msg}
-                  {validation_Name(contactform.City).msg}
+
                   <div className="contact_list me-5">
                     <TextField
                       value={
@@ -316,7 +301,6 @@ function Contact() {
                           ? contactform.Name
                           : ""
                       }
-                      onKeyUp={validation_Name}
                       onBlur={(e) =>
                         setcontactform({ ...contactform, Name: e.target.value })
                       }
@@ -335,7 +319,6 @@ function Contact() {
                           ? contactform.Email
                           : ""
                       }
-                      onKeyUp={validation_Email}
                       onBlur={(e) =>
                         setcontactform({
                           ...contactform,
@@ -362,7 +345,6 @@ function Contact() {
                           ? contactform.PhoneNo
                           : ""
                       }
-                      onKeyUp={validation_Phoneno}
                       onBlur={(e) =>
                         setcontactform({
                           ...contactform,
@@ -389,7 +371,6 @@ function Contact() {
                           ? contactform.SportsAvenue
                           : ""
                       }
-                      onKeyUp={validation_Sports}
                       onBlur={(e) =>
                         setcontactform({
                           ...contactform,
@@ -416,7 +397,6 @@ function Contact() {
                           ? contactform.City
                           : ""
                       }
-                      onKeyUp={validation_Name}
                       onBlur={(e) =>
                         setcontactform({
                           ...contactform,
@@ -445,6 +425,23 @@ function Contact() {
                         >
                           Submit Form
                         </button>
+                      </div>
+                      <div className="col-sm-10 col-11 text-center mt-3 ms-4">
+                        {warning && (
+                          <>
+                            <h6 className="text-danger warning">
+                              Some fields are incorrect.please check nad try
+                              again.
+                            </h6>
+                          </>
+                        )}
+                        {success && (
+                          <>
+                            <h6 className="text-success warning ms-5">
+                              Your Message Successfully Sent !
+                            </h6>
+                          </>
+                        )}
                       </div>
                     </div>
                   </div>
