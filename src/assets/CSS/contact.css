@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
 .contactform {
   height: 100%;
   margin-top: 200px;
@@ -57,23 +57,74 @@
   top: 45px;
 }
 .contact_list {
-  margin-top: 90px;
+  margin-top: 70px;
 }
-.contactinput {
-  border-bottom: 0.1px solid rgb(255, 255, 255) !important;
+ .contactinput.css-1a1fmpi-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid #e0e0e0!important;
+
 }
-.contactinput:hover {
-  border-bottom: 0.1px solid rgb(255, 255, 255) !important;
-}
-.contactinput label {
+
+
+
+
+/* .contactinput:focus {
+  border-bottom: 1px solid #1976d2;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  outline: 0;
+  
+} */
+
+/* .contactinput::placeholder {
   font-size: 16px !important;
   color: #828282;
   font-weight: 400;
   font-family: "Lexend Deca";
+  left: 3px;
+  bottom: 5px;
+  position: absolute;
+  right: 0;
+} */
+/* input */
+/* .fieldOuter {
+  position: relative;
+  margin: 0 0 30px 0;
+  font-size: 16px
 }
-.contactinput_error {
-  border-bottom: 3px solid rgb(216, 8, 39) !important;
+
+.fieldOuter label {
+  font-weight: 400;
+  font-family: "Lexend Deca";
+  position: absolute;
+  left: -15px;
+  bottom: 0px;
+  right: 0;
+  top: 20px;
+  overflow: hidden;
+  color: #999;
+  white-space: nowrap;
+  z-index: 1;
+  opacity: 0; 
+  transition: 0.1s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transform: scale(1) translateY(-50%) translateX(15px);
 }
+.fieldOuter input:focus + label {
+  opacity: 1;
+  color: #1976d2;
+  font-size: 12px;
+}
+
+.fieldOuter input:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+}
+.fieldOuter input:focus::placeholder{
+  opacity: 0;
+} */
+
 
 .contact_submit {
   background-color: #5fd068;

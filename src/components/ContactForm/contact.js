@@ -54,8 +54,6 @@ function Contact() {
         SportsAvenue: "not_selected",
         City: "not_selected",
       });
-    } else {
-      setclassName("contactinput_error");
     }
   }
 
@@ -118,6 +116,33 @@ function Contact() {
                   {validation_Name(contactform.City).msg}
 
                   <div className="contact_list ms-4 me-5 ps-4">
+                    {/* <div class="fieldOuter">
+                      <input
+                        value={
+                          contactform.Name != "not_selected"
+                            ? contactform.Name
+                            : ""
+                        }
+                        onKeyUp={validation_Name}
+                        onBlur={(e) =>
+                          setcontactform({
+                            ...contactform,
+                            Name: e.target.value,
+                          })
+                        }
+                        onChange={(e) =>
+                          setcontactform({
+                            ...contactform,
+                            Name: e.target.value,
+                          })
+                        }
+                        type="text"
+                        placeholder="Name"
+                        className={className}
+                        style={{ marginTop: 7 }}
+                      />
+                      <label for="LastName">Name</label>
+                    </div> */}
                     <TextField
                       value={
                         contactform.Name != "not_selected"
@@ -126,19 +151,25 @@ function Contact() {
                       }
                       onKeyUp={validation_Name}
                       onBlur={(e) =>
-                        setcontactform({ ...contactform, Name: e.target.value })
+                        setcontactform({
+                          ...contactform,
+                          Name: e.target.value,
+                        })
                       }
                       onChange={(e) =>
-                        setcontactform({ ...contactform, Name: e.target.value })
+                        setcontactform({
+                          ...contactform,
+                          Name: e.target.value,
+                        })
                       }
+                      sx={{ marginTop: 2 }}
                       fullWidth
-                      id="NAME"
+                      id="standard-basic"
                       label="Name"
                       variant="standard"
                       className={className}
-                      variant="standard"
+                      error={!contactform.Name}
                     />
-
                     <TextField
                       value={
                         contactform.Email != "not_selected"
@@ -164,6 +195,7 @@ function Contact() {
                       label="Email"
                       variant="standard"
                       className={className}
+                      error={!contactform.Email}
                     />
                     <TextField
                       value={
@@ -190,6 +222,7 @@ function Contact() {
                       label="Phone"
                       variant="standard"
                       className={className}
+                      error={!contactform.PhoneNo}
                     />
                     <TextField
                       value={
@@ -216,6 +249,7 @@ function Contact() {
                       label="Sports Avenue"
                       variant="standard"
                       className={className}
+                      error={!contactform.SportsAvenue}
                     />
                     <TextField
                       value={
@@ -242,6 +276,7 @@ function Contact() {
                       label="City"
                       variant="standard"
                       className={className}
+                      error={!contactform.City}
                     />
                     <div className="row justify-content-center">
                       <div className="col-12 text-center">
@@ -292,6 +327,7 @@ function Contact() {
                       id="standard-basic"
                       label="Name"
                       variant="standard"
+                      error={!contactform.Name}
                     />
                     <TextField
                       value={
@@ -318,6 +354,7 @@ function Contact() {
                       label="Email"
                       variant="standard"
                       className="mt-4"
+                      error={!contactform.Email}
                     />
                     <TextField
                       value={
@@ -344,6 +381,7 @@ function Contact() {
                       label="Phone"
                       variant="standard"
                       className="mt-4"
+                      error={!contactform.PhoneNo}
                     />
                     <TextField
                       value={
@@ -370,6 +408,7 @@ function Contact() {
                       label="Sports Avenue"
                       variant="standard"
                       className="mt-4"
+                      error={!contactform.SportsAvenue}
                     />
                     <TextField
                       value={
@@ -395,6 +434,7 @@ function Contact() {
                       label="City"
                       variant="standard"
                       className="mt-3 pt-1"
+                      error={!contactform.City}
                     />
                     <div className="row justify-content-center">
                       <div className="col-12 text-center mt-3">
