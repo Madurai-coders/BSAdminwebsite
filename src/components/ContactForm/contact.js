@@ -1,6 +1,5 @@
 import "../../assets/CSS/contact.css";
 import React, { Component } from "react";
-
 import PhoneIcon from "@mui/icons-material/Phone";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -34,16 +33,17 @@ function Contact() {
     var email = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{3,4})+$/;
     var No = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
     if (
-      contactform.Name &&
+      contactform.Name.length > 2 &&
       email.test(contactform.Email) &&
       No.test(contactform.PhoneNo) &&
       contactform.SportsAvenue.length < 10 &&
-      contactform.City
+      contactform.City.length > 2
     ) {
       let array = validatedata;
       array.push({ ...contactform });
       console.log("contactform:", array);
       setvalidatedata([...array]);
+      setwarning(false);
       setsuccess(true);
       setTimeout(function() {
         setsuccess(false);
@@ -55,13 +55,7 @@ function Contact() {
         SportsAvenue: "not_selected",
         City: "not_selected",
       });
-    } else if (!email.test(contactform.Email)) {
-      setwarning(true);
-    }
-    if (!No.test(contactform.PhoneNo)) {
-      setwarning(true);
-    }
-    if (contactform.SportsAvenue.length > 10) {
+    } else {
       setwarning(true);
     }
   }
@@ -251,7 +245,7 @@ function Contact() {
                       error={!contactform.City}
                     />
                     <div className="row justify-content-center">
-                      <div className="col-12 text-center">
+                      <div className="col-12 text-center mb-5">
                         <button
                           type="button"
                           className="contact_submit btn btn-success mt-5"
@@ -260,20 +254,30 @@ function Contact() {
                           Submit Form
                         </button>
                       </div>
-                      <div className="col-9 text-center mt-3 ms-4">
+                      <div className="col-12 text-center">
                         {warning && (
                           <>
-                            <h6 className="text-danger warning">
-                              some fields are incorrect.please check nad try
-                              again.
-                            </h6>
+                            <div className="mb-4">
+                              <button
+                                type="button"
+                                class="warning_btn btn btn-outline-danger"
+                              >
+                                Some fields are incorrect. Please check and try
+                                again.
+                              </button>
+                            </div>
                           </>
                         )}
                         {success && (
                           <>
-                            <h6 className="text-success warning ms-5">
-                              Your Message Successfully Sent !
-                            </h6>
+                            <div className="mb-4">
+                              <button
+                                type="button"
+                                class="success_btn btn btn-outline-success"
+                              >
+                                Your Message Successfully Sent !
+                              </button>
+                            </div>
                           </>
                         )}
                       </div>
@@ -288,8 +292,8 @@ function Contact() {
         {Mobile && (
           <>
             <div className="row justify-content-center">
-              <div className="col-11" data-aos="zoom-in">
-                <div className="form ms-5" data-aos="zoom-in">
+              <div className="col-11 mb-5" data-aos="zoom-in">
+                <div className="form" data-aos="zoom-in">
                   <div className="contact_tit ms-5">
                     <h2 className="contact_title ms-5 ps-2">Contact Now</h2>
                   </div>
@@ -417,7 +421,7 @@ function Contact() {
                       error={!contactform.City}
                     />
                     <div className="row justify-content-center">
-                      <div className="col-12 text-center mt-3">
+                      <div className="col-12 text-center mt-3 mb-5">
                         <button
                           type="button"
                           className="contact_submit btn btn-success mt-5"
@@ -426,20 +430,30 @@ function Contact() {
                           Submit Form
                         </button>
                       </div>
-                      <div className="col-sm-10 col-11 text-center mt-3 ms-4">
+                      <div className="col-12 text-center mt-3">
                         {warning && (
                           <>
-                            <h6 className="text-danger warning">
-                              Some fields are incorrect.please check nad try
-                              again.
-                            </h6>
+                            <div className="">
+                              <button
+                                type="button"
+                                class="warning_btn btn btn-outline-danger"
+                              >
+                                Some fields are incorrect. Please check and try
+                                again.
+                              </button>
+                            </div>
                           </>
                         )}
                         {success && (
                           <>
-                            <h6 className="text-success warning ms-5">
-                              Your Message Successfully Sent !
-                            </h6>
+                            <div className="">
+                              <button
+                                type="button"
+                                class="success_btn btn btn-outline-success"
+                              >
+                                Your Message Successfully Sent !
+                              </button>
+                            </div>
                           </>
                         )}
                       </div>

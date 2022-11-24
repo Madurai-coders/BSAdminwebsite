@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap");
 .contactform {
   height: 100%;
   margin-top: 200px;
@@ -40,7 +40,6 @@
 }
 .form {
   width: 70%;
-  height: 600px;
   background-color: #ffffff;
   box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
   border-radius: 18px;
@@ -59,17 +58,27 @@
 .contact_list {
   margin-top: 70px;
 }
- .contactinput.css-1a1fmpi-MuiInputBase-root-MuiInput-root:before {
-  border-bottom: 1px solid #e0e0e0!important;
-
+.contactinput.css-1a1fmpi-MuiInputBase-root-MuiInput-root:before {
+  border-bottom: 1px solid #e0e0e0 !important;
 }
-.warning{
+.warning {
   position: absolute;
 }
+.warning_btn {
+  color: #828282;
+  border: 1px solid #ffb8b8;
+  border-radius: 9px;
+  padding: 7px 30px;
+  position: relative;
+  bottom: 20px;
+}
+.success_btn {
 
-
-
-
+  border-radius: 9px;
+  padding: 7px 80px;
+  position: relative;
+  bottom: 20px;
+}
 .contact_submit {
   background-color: #5fd068;
   border: none;
@@ -82,6 +91,11 @@
 
 .contact_submit:hover {
   background-color: #6cd775;
+}
+.contact_submit:focus {
+  background-color: #6cd775;
+  box-shadow: none;
+  border: none;
 }
 
 @media only screen and (max-width: 1350px) {
@@ -111,6 +125,9 @@
   .Ccamera {
     height: 60%;
   }
+  .warning_btn{
+    padding: 7px 20px;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .contact_title {
@@ -131,6 +148,13 @@
   .contact_submit {
     padding: 10px 110px;
   }
+  .warning_btn{
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+  .success_btn{
+    padding: 8px 50px; 
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -140,14 +164,19 @@
   .contact_submit {
     padding: 10px 85px;
   }
+  .warning_btn{
+    padding: 7px 7px;
+    font-size: 11px;
+  }
+  .success_btn{
+    padding: 8px 40px; 
+  }
 }
 @media only screen and (max-width: 769px) {
   .contactform {
     margin-top: 45px;
   }
-  .form {
-    height: 620px;
-  }
+  
   .contact_title {
     margin-left: 20px !important;
   }
@@ -164,6 +193,18 @@
   .contactform {
     margin-bottom: 50px;
   }
+  .warning_btn{
+    padding: 8px 22px;
+    font-size: 13px;
+    position: relative;
+  bottom: 40px;
+  }
+  .success_btn{
+    padding: 8px 80px;
+    font-size: 13px;
+    position: relative;
+  bottom: 30px;
+  }
 }
 
 @media only screen and (max-width: 460px) {
@@ -176,11 +217,19 @@
 
     font-size: 15px;
   }
-  .form {
-    height: 600px;
-  }
+  
   .contact_title {
     font-size: 35px;
+  }
+  .warning_btn{
+    padding: 8px 7px;
+    font-size: 11px;
+  }
+  .success_btn{
+    padding: 8px 50px;
+    font-size: 11px;
+    position: relative;
+  bottom: 30px;
   }
 }
 
@@ -190,13 +239,26 @@
     font-size: 12px;
     margin-top: 25px !important;
   }
-  .form {
-    height: 570px;
+  .warning_btn{
+    padding: 8px 5px;
+    font-size: 9px;
+  }
+  .success_btn{
+    padding: 8px 30px;
+    font-size: 11px;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .contact_title {
     font-size: 29px;
+  }
+  .warning_btn{
+    padding: 8px 5px;
+    font-size: 8px;
+  }
+  .success_btn{
+    padding: 8px 20px;
+    font-size: 11px;
   }
 }
